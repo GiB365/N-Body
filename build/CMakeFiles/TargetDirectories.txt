@@ -1,0 +1,3 @@
+/home/gib/Downloads/N-Body/build/CMakeFiles/nbody_sim.dir
+/home/gib/Downloads/N-Body/build/CMakeFiles/edit_cache.dir
+/home/gib/Downloads/N-Body/build/CMakeFiles/rebuild_cache.dir
