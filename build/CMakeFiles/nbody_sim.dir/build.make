@@ -93,7 +93,9 @@ nbody_sim_EXTERNAL_OBJECTS =
 nbody_sim: CMakeFiles/nbody_sim.dir/main.cpp.o
 nbody_sim: CMakeFiles/nbody_sim.dir/build.make
 nbody_sim: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
-nbody_sim: /usr/lib/x86_64-linux-gnu/libGL.so
+nbody_sim: /usr/lib/x86_64-linux-gnu/libGLEW.so
+nbody_sim: /usr/lib/x86_64-linux-gnu/libGLX.so
+nbody_sim: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 nbody_sim: CMakeFiles/nbody_sim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/gib/Downloads/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable nbody_sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nbody_sim.dir/link.txt --verbose=$(VERBOSE)
