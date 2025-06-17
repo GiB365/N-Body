@@ -1,16 +1,25 @@
-#include <utility>
+#include <GL/glew.h>
+#include <GL/gl.h>
+#include <GLFW/glfw3.h>
+#include <glm/ext/vector_float2.hpp>
 #include <vector>
+#include <glm/vec3.hpp>
+#include <string>
 
 class Renderer {
  private:
-  std::vector<std::pair<float, int>> shapes;
+  GLuint vao, vbo;
+  GLuint shader_program;
+  GLuint vs, fs;
 
  public:
+  std::vector<glm::vec3>* point_transforms;
+
   Renderer();
 
-  void addShape(float radius, int sides);
+  void addCircle(float radius, glm::vec2 position);
 
-  std::vector<float> genVertices();
+  void render(GLFWwindow* window, bool clear = true, bool wireframe = false);
 
-  void render(bool clear = true);
+  std::string shaderToString(const std::string& filename);
 };

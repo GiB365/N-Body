@@ -17,5 +17,5 @@ link_directories(${GLFW_LIBRARY_DIRS} ${GLEW_LIBRARY_DIRS})
 
 message(STATUS "GLEW libraries: ${GLEW_LIBRARIES}")
 
-add_executable(nbody_sim main.cpp)
+add_executable(nbody_sim main.cpp Renderer.cpp)
 target_link_libraries(nbody_sim PRIVATE ${GLFW_LIBRARIES} ${GLEW_LIBRARIES} OpenGL::GL)

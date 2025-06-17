@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/nbody_sim.dir/Renderer.cpp.o"
+  "CMakeFiles/nbody_sim.dir/Renderer.cpp.o.d"
   "CMakeFiles/nbody_sim.dir/main.cpp.o"
   "CMakeFiles/nbody_sim.dir/main.cpp.o.d"
   "nbody_sim"

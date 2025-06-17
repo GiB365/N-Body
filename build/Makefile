@@ -129,6 +129,30 @@ nbody_sim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/build
 .PHONY : nbody_sim/fast
 
+Renderer.o: Renderer.cpp.o
+.PHONY : Renderer.o
+
+# target to build an object file
+Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Renderer.cpp.o
+.PHONY : Renderer.cpp.o
+
+Renderer.i: Renderer.cpp.i
+.PHONY : Renderer.i
+
+# target to preprocess a source file
+Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Renderer.cpp.i
+.PHONY : Renderer.cpp.i
+
+Renderer.s: Renderer.cpp.s
+.PHONY : Renderer.s
+
+# target to generate assembly for a file
+Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Renderer.cpp.s
+.PHONY : Renderer.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... nbody_sim"
+	@echo "... Renderer.o"
+	@echo "... Renderer.i"
+	@echo "... Renderer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
