@@ -129,6 +129,30 @@ nbody_sim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/build
 .PHONY : nbody_sim/fast
 
+Quadtree.o: Quadtree.cpp.o
+.PHONY : Quadtree.o
+
+# target to build an object file
+Quadtree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Quadtree.cpp.o
+.PHONY : Quadtree.cpp.o
+
+Quadtree.i: Quadtree.cpp.i
+.PHONY : Quadtree.i
+
+# target to preprocess a source file
+Quadtree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Quadtree.cpp.i
+.PHONY : Quadtree.cpp.i
+
+Quadtree.s: Quadtree.cpp.s
+.PHONY : Quadtree.s
+
+# target to generate assembly for a file
+Quadtree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Quadtree.cpp.s
+.PHONY : Quadtree.cpp.s
+
 Renderer.o: Renderer.cpp.o
 .PHONY : Renderer.o
 
@@ -152,6 +176,30 @@ Renderer.s: Renderer.cpp.s
 Renderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Renderer.cpp.s
 .PHONY : Renderer.cpp.s
+
+Simulator.o: Simulator.cpp.o
+.PHONY : Simulator.o
+
+# target to build an object file
+Simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Simulator.cpp.o
+.PHONY : Simulator.cpp.o
+
+Simulator.i: Simulator.cpp.i
+.PHONY : Simulator.i
+
+# target to preprocess a source file
+Simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Simulator.cpp.i
+.PHONY : Simulator.cpp.i
+
+Simulator.s: Simulator.cpp.s
+.PHONY : Simulator.s
+
+# target to generate assembly for a file
+Simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Simulator.cpp.s
+.PHONY : Simulator.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... nbody_sim"
+	@echo "... Quadtree.o"
+	@echo "... Quadtree.i"
+	@echo "... Quadtree.s"
 	@echo "... Renderer.o"
 	@echo "... Renderer.i"
 	@echo "... Renderer.s"
+	@echo "... Simulator.o"
+	@echo "... Simulator.i"
+	@echo "... Simulator.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

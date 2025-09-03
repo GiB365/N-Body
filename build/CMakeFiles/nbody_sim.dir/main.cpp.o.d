@@ -184,11 +184,24 @@ CMakeFiles/nbody_sim.dir/main.cpp.o: /home/gib/Downloads/N-Body/main.cpp \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/gib/Downloads/N-Body/Renderer.hpp /usr/include/c++/13/vector \
+ /home/gib/Downloads/N-Body/Simulator.hpp /usr/include/glm/vec2.hpp \
+ /usr/include/glm/ext/vector_bool2.hpp \
+ /usr/include/glm/ext/vector_bool2_precision.hpp \
+ /usr/include/glm/ext/vector_float2_precision.hpp \
+ /usr/include/glm/ext/vector_double2.hpp \
+ /usr/include/glm/ext/vector_double2_precision.hpp \
+ /usr/include/glm/ext/vector_int2.hpp \
+ /usr/include/glm/ext/vector_int2_sized.hpp \
+ /usr/include/glm/ext/scalar_int_sized.hpp \
+ /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint2.hpp \
+ /usr/include/glm/ext/vector_uint2_sized.hpp \
+ /usr/include/glm/ext/scalar_uint_sized.hpp /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/glm/vec3.hpp \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/gib/Downloads/N-Body/Quadtree.hpp \
+ /home/gib/Downloads/N-Body/Renderer.hpp /usr/include/glm/vec3.hpp \
  /usr/include/glm/ext/vector_bool3.hpp \
  /usr/include/glm/detail/type_vec3.hpp \
  /usr/include/glm/detail/type_vec3.inl \
@@ -199,7 +212,17 @@ CMakeFiles/nbody_sim.dir/main.cpp.o: /home/gib/Downloads/N-Body/main.cpp \
  /usr/include/glm/ext/vector_double3_precision.hpp \
  /usr/include/glm/ext/vector_int3.hpp \
  /usr/include/glm/ext/vector_int3_sized.hpp \
- /usr/include/glm/ext/scalar_int_sized.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint3.hpp \
- /usr/include/glm/ext/vector_uint3_sized.hpp \
- /usr/include/glm/ext/scalar_uint_sized.hpp
+ /usr/include/glm/ext/vector_uint3.hpp \
+ /usr/include/glm/ext/vector_uint3_sized.hpp /usr/include/glm/vec4.hpp \
+ /usr/include/glm/ext/vector_bool4.hpp \
+ /usr/include/glm/detail/type_vec4.hpp \
+ /usr/include/glm/detail/type_vec4.inl \
+ /usr/include/glm/ext/vector_bool4_precision.hpp \
+ /usr/include/glm/ext/vector_float4.hpp \
+ /usr/include/glm/ext/vector_float4_precision.hpp \
+ /usr/include/glm/ext/vector_double4.hpp \
+ /usr/include/glm/ext/vector_double4_precision.hpp \
+ /usr/include/glm/ext/vector_int4.hpp \
+ /usr/include/glm/ext/vector_int4_sized.hpp \
+ /usr/include/glm/ext/vector_uint4.hpp \
+ /usr/include/glm/ext/vector_uint4_sized.hpp

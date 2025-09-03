@@ -16,6 +16,7 @@ include_directories(${GLFW_INCLUDE_DIRS} ${GLEW_INCLUDE_DIRS})
 link_directories(${GLFW_LIBRARY_DIRS} ${GLEW_LIBRARY_DIRS})
 
 message(STATUS "GLEW libraries: ${GLEW_LIBRARIES}")
+set(CMAKE_BUILD_TYPE Debug)
 
-add_executable(nbody_sim main.cpp Renderer.cpp)
+add_executable(nbody_sim main.cpp Renderer.cpp Simulator.cpp Quadtree.cpp)
 target_link_libraries(nbody_sim PRIVATE ${GLFW_LIBRARIES} ${GLEW_LIBRARIES} OpenGL::GL)

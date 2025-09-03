@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/nbody_sim.dir/Quadtree.cpp.o"
+  "CMakeFiles/nbody_sim.dir/Quadtree.cpp.o.d"
   "CMakeFiles/nbody_sim.dir/Renderer.cpp.o"
   "CMakeFiles/nbody_sim.dir/Renderer.cpp.o.d"
+  "CMakeFiles/nbody_sim.dir/Simulator.cpp.o"
+  "CMakeFiles/nbody_sim.dir/Simulator.cpp.o.d"
   "CMakeFiles/nbody_sim.dir/main.cpp.o"
   "CMakeFiles/nbody_sim.dir/main.cpp.o.d"
   "nbody_sim"

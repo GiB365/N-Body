@@ -1,7 +1,10 @@
-CMakeFiles/nbody_sim.dir/Renderer.cpp.o: \
- /home/gib/Downloads/N-Body/Renderer.cpp /usr/include/stdc-predef.h \
- /home/gib/Downloads/N-Body/Renderer.hpp /usr/include/GL/glew.h \
- /usr/include/c++/13/cstddef \
+CMakeFiles/nbody_sim.dir/Simulator.cpp.o: \
+ /home/gib/Downloads/N-Body/Simulator.cpp /usr/include/stdc-predef.h \
+ /home/gib/Downloads/N-Body/Simulator.hpp \
+ /usr/include/glm/ext/vector_float2.hpp \
+ /usr/include/glm/detail/type_vec2.hpp \
+ /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/c++/13/cassert \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -12,9 +15,10 @@ CMakeFiles/nbody_sim.dir/Renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h \
+ /usr/include/c++/13/pstl/pstl_config.h /usr/include/assert.h \
+ /usr/include/c++/13/cstddef \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
- /usr/include/c++/13/cstdint \
+ /usr/include/glm/simd/platform.h /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -23,16 +27,21 @@ CMakeFiles/nbody_sim.dir/Renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/GL/glu.h \
- /usr/include/GL/gl.h /usr/include/GLFW/glfw3.h \
- /usr/include/glm/ext/vector_float2.hpp \
- /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
- /usr/include/c++/13/cassert /usr/include/assert.h \
- /usr/include/glm/simd/platform.h /usr/include/c++/13/type_traits \
- /usr/include/glm/detail/type_vec2.inl \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/type_traits /usr/include/glm/detail/type_vec2.inl \
  /usr/include/glm/detail/compute_vector_relational.hpp \
- /usr/include/c++/13/limits /usr/include/c++/13/vector \
+ /usr/include/c++/13/limits /usr/include/glm/vec2.hpp \
+ /usr/include/glm/ext/vector_bool2.hpp \
+ /usr/include/glm/ext/vector_bool2_precision.hpp \
+ /usr/include/glm/ext/vector_float2_precision.hpp \
+ /usr/include/glm/ext/vector_double2.hpp \
+ /usr/include/glm/ext/vector_double2_precision.hpp \
+ /usr/include/glm/ext/vector_int2.hpp \
+ /usr/include/glm/ext/vector_int2_sized.hpp \
+ /usr/include/glm/ext/scalar_int_sized.hpp \
+ /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint2.hpp \
+ /usr/include/glm/ext/vector_uint2_sized.hpp \
+ /usr/include/glm/ext/scalar_uint_sized.hpp /usr/include/c++/13/vector \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/c++/13/bits/functexcept.h \
@@ -71,6 +80,9 @@ CMakeFiles/nbody_sim.dir/Renderer.cpp.o: \
  /usr/include/c++/13/bits/memory_resource.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
+ /home/gib/Downloads/N-Body/Quadtree.hpp \
+ /home/gib/Downloads/N-Body/Renderer.hpp /usr/include/GL/glew.h \
+ /usr/include/GL/glu.h /usr/include/GL/gl.h /usr/include/GLFW/glfw3.h \
  /usr/include/glm/vec3.hpp /usr/include/glm/ext/vector_bool3.hpp \
  /usr/include/glm/detail/type_vec3.hpp \
  /usr/include/glm/detail/type_vec3.inl \
@@ -81,10 +93,8 @@ CMakeFiles/nbody_sim.dir/Renderer.cpp.o: \
  /usr/include/glm/ext/vector_double3_precision.hpp \
  /usr/include/glm/ext/vector_int3.hpp \
  /usr/include/glm/ext/vector_int3_sized.hpp \
- /usr/include/glm/ext/scalar_int_sized.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint3.hpp \
- /usr/include/glm/ext/vector_uint3_sized.hpp \
- /usr/include/glm/ext/scalar_uint_sized.hpp /usr/include/glm/vec4.hpp \
+ /usr/include/glm/ext/vector_uint3.hpp \
+ /usr/include/glm/ext/vector_uint3_sized.hpp /usr/include/glm/vec4.hpp \
  /usr/include/glm/ext/vector_bool4.hpp \
  /usr/include/glm/detail/type_vec4.hpp \
  /usr/include/glm/detail/type_vec4.inl \
@@ -177,8 +187,8 @@ CMakeFiles/nbody_sim.dir/Renderer.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/fstream \
- /usr/include/c++/13/istream /usr/include/c++/13/ios \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/iostream \
+ /usr/include/c++/13/ostream /usr/include/c++/13/ios \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/typeinfo /usr/include/c++/13/bits/nested_exception.h \
@@ -211,9 +221,6 @@ CMakeFiles/nbody_sim.dir/Renderer.cpp.o: \
  /usr/include/c++/13/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
  /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
- /usr/include/c++/13/bits/ostream.tcc \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/iostream
+ /usr/include/c++/13/bits/basic_ios.tcc \
+ /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
+ /usr/include/c++/13/bits/istream.tcc

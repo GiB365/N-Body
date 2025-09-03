@@ -81,12 +81,12 @@ clean: CMakeFiles/nbody_sim.dir/clean
 CMakeFiles/nbody_sim.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gib/Downloads/N-Body/build/CMakeFiles --progress-num=1,2,3 "Built target nbody_sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/gib/Downloads/N-Body/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target nbody_sim"
 .PHONY : CMakeFiles/nbody_sim.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/nbody_sim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gib/Downloads/N-Body/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gib/Downloads/N-Body/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/nbody_sim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gib/Downloads/N-Body/build/CMakeFiles 0
 .PHONY : CMakeFiles/nbody_sim.dir/rule
