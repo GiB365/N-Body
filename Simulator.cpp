@@ -132,4 +132,6 @@ void Simulator::addBody(float mass, int radius, glm::vec2 position,
   bodies.emplace_back(Body(mass, radius, position, color, velocity));
 }
 
+void Simulator::clearBodies() { bodies.clear(); }
+
 int rand_range(int min, int max) { return min + rand() % (max - min + 1); }

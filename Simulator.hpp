@@ -32,6 +32,7 @@ class Simulator {
   void addBody(float mass, int radius, glm::vec2 position,
                glm::vec3 color = glm::vec3(1),
                glm::vec2 velocity = glm::vec2(0, 0));
+  void clearBodies();
 
   void update(SimulationMethod method, double delta);
 
