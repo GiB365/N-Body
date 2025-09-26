@@ -13,6 +13,8 @@ class Renderer {
   GLuint shader_program;
   GLuint vs, fs;
 
+  const float ZOOM_SCALING = 1.1;
+
  public:
   std::vector<glm::vec3> point_transforms;
   std::vector<glm::vec3> point_colors;
@@ -36,4 +38,7 @@ class Renderer {
   std::string shaderToString(const std::string& filename);
 
   GLuint* getShaderProgram();
+
+  glm::vec2 getGlobalMousePosition(GLFWwindow* window);
+  void processZoom(GLFWwindow* window, double yoffset);
 };

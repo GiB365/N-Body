@@ -91,11 +91,11 @@ CMakeFiles/nbody_sim.dir/main.cpp.o: /home/gib/Downloads/N-Body/main.cpp \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /usr/include/glm/ext/vector_float2.hpp \
- /usr/include/glm/detail/type_vec2.hpp \
  /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
  /usr/include/c++/13/cassert /usr/include/assert.h \
- /usr/include/glm/simd/platform.h /usr/include/glm/detail/type_vec2.inl \
+ /usr/include/glm/simd/platform.h /usr/include/glm/ext/vector_float2.hpp \
+ /usr/include/glm/detail/type_vec2.hpp \
+ /usr/include/glm/detail/type_vec2.inl \
  /usr/include/glm/detail/compute_vector_relational.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \

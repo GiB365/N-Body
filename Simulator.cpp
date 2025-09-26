@@ -33,6 +33,7 @@ Simulator::Simulator(Renderer* renderer, int body_count) {
     addBody(body_mass, body_mass, glm::vec2(x, y));
   }
 }
+
 void Simulator::update(SimulationMethod method, double delta) {
   switch (method) {
     case SimulationMethod::Simple:

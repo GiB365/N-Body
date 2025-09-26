@@ -2,11 +2,10 @@
 #include <GL/gl.h>
 #include <GLFW/glfw3.h>
 #include <cmath>
+#include <glm/detail/qualifier.hpp>
 #include <glm/ext/vector_float2.hpp>
 #include <iostream>
 #include "Simulator.hpp"
-
-const float ZOOM_SCALING = 1.1;
 
 double last_frame_rate_update = 0;
 double last_frame_time = 0;
@@ -45,17 +44,17 @@ int main(int argc, char* argv[]) {
   simulator = new Simulator(renderer, 0);
 
   // Earth + moon
-  // simulator->addBody(1, 100, glm::vec2(500, 0), glm::vec3(0.55),
-  //                    glm::vec2(0, 127));
-  // simulator->addBody(810, 400, glm::vec2(0, 0), glm::vec3(0.1, 0.3, 0.55),
-  //                  glm::vec2(0, 0));
-  //  Mars + Deimos + Phobos
-  simulator->addBody(600, 400, glm::vec2(0, 0), glm::vec3(0.7, 0.45, 0.35),
+  simulator->addBody(1, 100, glm::vec2(800, 0), glm::vec3(0.55),
+                     glm::vec2(0, 127));
+  simulator->addBody(810, 400, glm::vec2(0, 0), glm::vec3(0.1, 0.3, 0.55),
                      glm::vec2(0, 0));
-  simulator->addBody(2, 20, glm::vec2(500, 0), glm::vec3(0.7),
-                     glm::vec2(0, 110));
-  simulator->addBody(1, 10, glm::vec2(800, 0), glm::vec3(0.7),
-                     glm::vec2(0, 88));
+  //  Mars + Deimos + Phobos
+  // simulator->addBody(600, 400, glm::vec2(0, 0), glm::vec3(0.7, 0.45, 0.35),
+  //                   glm::vec2(0, 0));
+  // simulator->addBody(2, 40, glm::vec2(500, 0), glm::vec3(0.7),
+  //                  glm::vec2(0, 110));
+  // simulator->addBody(1, 10, glm::vec2(800, 0), glm::vec3(0.7),
+  //                 glm::vec2(0, 88));
 
   glfwSetScrollCallback(window, onMouseScroll);
 
@@ -100,15 +99,5 @@ void onWindowRescale(GLFWwindow* window, int height, int width) {
 }
 
 void onMouseScroll(GLFWwindow* window, double xoffset, double yoffset) {
-  int window_x, window_y;
-  glfwGetWindowSize(window, &window_x, &window_y);
-
-  double mouse_x, mouse_y;
-  glfwGetCursorPos(window, &mouse_x, &mouse_y);
-
-  renderer->zoom /= pow(ZOOM_SCALING, yoffset);
-
-  glfwGetCursorPos(window, &mouse_x, &mouse_y);
-
-  std::cout << "X: " << mouse_x << " Y: " << mouse_y << std::endl;
+  renderer->processZoom(window, yoffset);
 }

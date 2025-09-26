@@ -133,8 +133,8 @@ void Renderer::render(GLFWwindow* window, bool clear, bool wireframe) {
   if (panning) {
     glm::vec2 mouse_delta =
         previous_mouse_position - glm::vec2(mouse_x, mouse_y);
-    camera_position +=
-        glm::vec2(-mouse_delta.x / 1000.0, mouse_delta.y / 1000.0);
+    camera_position += glm::vec2(mouse_delta.x, -mouse_delta.y) *
+                       glm::vec2(pow(zoom / 1000, 2));
   }
 
   previous_mouse_position = glm::vec2(mouse_x, mouse_y);
@@ -192,5 +192,37 @@ std::string Renderer::shaderToString(const std::string& filename) {
 }
 
 GLuint* Renderer::getShaderProgram() { return &shader_program; }
+
+glm::vec2 Renderer::getGlobalMousePosition(GLFWwindow* window) {
+  int window_x, window_y;
+  glfwGetWindowSize(window, &window_x, &window_y);
+
+  double mouse_x, mouse_y;
+  glfwGetCursorPos(window, &mouse_x, &mouse_y);
+  glm::vec2 mouse_pos = glm::vec2(mouse_x, -mouse_y) + glm::vec2(0, window_y);
+
+  glm::vec2 global_mouse_position =
+      glm::vec2(mouse_pos.x / window_x, mouse_pos.y / window_y);
+  global_mouse_position *= zoom;
+  global_mouse_position *= glm::vec2(2.0);
+  global_mouse_position -= glm::vec2(zoom);
+  global_mouse_position.y *= (float)window_y / window_x;
+
+  return global_mouse_position;
+}
+
+void Renderer::processZoom(GLFWwindow* window, double yoffset) {
+  glm::vec2 old_global_mouse_position = getGlobalMousePosition(window);
+
+  if (yoffset < 0) {
+    zoom *= ZOOM_SCALING;
+  } else {
+    zoom /= ZOOM_SCALING;
+  }
+
+  glm::vec2 new_global_mouse_position = getGlobalMousePosition(window);
+
+  camera_position += old_global_mouse_position - new_global_mouse_position;
+}
 
 #endif

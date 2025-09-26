@@ -14,7 +14,7 @@ out vec3 vColor;
 void main() {
   float display_ratio = resolution.y/resolution.x;
 
-  vec2 screen_space = vec2(offset.x + position.x / zoom, (offset.y + position.y / zoom) * display_ratio);
+  vec2 screen_space = vec2((position.x - offset.x) / zoom, ((position.y - offset.y) / zoom) * display_ratio);
   
   gl_Position = vec4(screen_space, 0.0, 1.0);
 
