@@ -55,6 +55,8 @@ int main(int argc, char* argv[]) {
   simulator = new Simulator(renderer, 0);
 
   while (!glfwWindowShouldClose(window)) {
+    glfwPollEvents();
+
     simulator->update(SimulationMethod::Simple,
                       glfwGetTime() - last_frame_time);
     last_frame_time = glfwGetTime();
@@ -84,7 +86,7 @@ void calculateFPS(GLFWwindow* window) {
     frame_count = 0;
     last_frame_rate_update = glfwGetTime();
 
-    std::cout << fps << std::endl;
+    // std::cout << fps << std::endl;
   }
 
   frame_count++;
@@ -103,8 +105,6 @@ void onKeyPress(GLFWwindow* window, int key, int scancode, int action,
   if (action != 1) {
     return;
   }
-
-  std::cout << key;
 
   switch (key - 48) {
     case 1:

@@ -18,7 +18,7 @@ Body::Body(float mass, int radius, glm::vec2 position, glm::vec3 color,
 }
 
 void Body::render(Renderer* renderer) {
-  renderer->addCircle(radius, position, color);
+  renderer->addCircle(position, radius, color);
 }
 
 Simulator::Simulator(Renderer* renderer, int body_count) {

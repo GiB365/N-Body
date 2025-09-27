@@ -18,8 +18,10 @@ add_executable(nbody_sim src/main.cpp src/Renderer.cpp src/Simulator.cpp src/Qua
 #add GLM
 target_include_directories(nbody_sim PRIVATE external/glm)
 
-#find_package(OpenGL)
-#target_link_libraries(nbody_sim PRIVATE glew glfw OpenGL::GL)
-target_link_libraries(nbody_sim PRIVATE glew glfw opengl32)
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libgcc -static-libstdc++")
+find_package(OpenGL)
+target_link_libraries(nbody_sim PRIVATE glew glfw OpenGL::GL)
+
+#For windows
+#target_link_libraries(nbody_sim PRIVATE glew glfw opengl32)
+#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libgcc -static-libstdc++")
 

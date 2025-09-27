@@ -213,7 +213,7 @@ void QuadTree::render() {
     glm::vec2 top_right =
         quad->center + glm::vec2(line_length / 2, line_length / 2);
 
-    renderer->addSquare(bottom_left, top_right, line_length);
+    // renderer->addSquare(bottom_left, top_right, line_length);
   }
 }
 
