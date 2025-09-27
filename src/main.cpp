@@ -106,7 +106,7 @@ void onKeyPress(GLFWwindow* window, int key, int scancode, int action,
 
   std::cout << key;
 
-  switch (key - 320) {
+  switch (key - 48) {
     case 1:
       loadEarthScene();
       break;
