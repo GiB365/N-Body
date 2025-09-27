@@ -162,6 +162,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named glew
+
+# Build rule for target.
+glew: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glew
+.PHONY : glew
+
+# fast build rule for target.
+glew/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glew.dir/build.make CMakeFiles/glew.dir/build
+.PHONY : glew/fast
+
+#=============================================================================
 # Target rules for targets named nbody_sim
 
 # Build rule for target.
@@ -225,6 +238,30 @@ docs: cmake_check_build_system
 docs/fast:
 	$(MAKE) $(MAKESILENT) -f external/glfw/docs/CMakeFiles/docs.dir/build.make external/glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
+
+external/glew/src/glew.o: external/glew/src/glew.c.o
+.PHONY : external/glew/src/glew.o
+
+# target to build an object file
+external/glew/src/glew.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glew.dir/build.make CMakeFiles/glew.dir/external/glew/src/glew.c.o
+.PHONY : external/glew/src/glew.c.o
+
+external/glew/src/glew.i: external/glew/src/glew.c.i
+.PHONY : external/glew/src/glew.i
+
+# target to preprocess a source file
+external/glew/src/glew.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glew.dir/build.make CMakeFiles/glew.dir/external/glew/src/glew.c.i
+.PHONY : external/glew/src/glew.c.i
+
+external/glew/src/glew.s: external/glew/src/glew.c.s
+.PHONY : external/glew/src/glew.s
+
+# target to generate assembly for a file
+external/glew/src/glew.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glew.dir/build.make CMakeFiles/glew.dir/external/glew/src/glew.c.s
+.PHONY : external/glew/src/glew.c.s
 
 src/Quadtree.o: src/Quadtree.cpp.o
 .PHONY : src/Quadtree.o
@@ -337,8 +374,12 @@ help:
 	@echo "... docs"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... glew"
 	@echo "... glfw"
 	@echo "... nbody_sim"
+	@echo "... external/glew/src/glew.o"
+	@echo "... external/glew/src/glew.i"
+	@echo "... external/glew/src/glew.s"
 	@echo "... src/Quadtree.o"
 	@echo "... src/Quadtree.i"
 	@echo "... src/Quadtree.s"

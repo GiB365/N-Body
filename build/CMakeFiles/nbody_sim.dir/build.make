@@ -140,9 +140,12 @@ nbody_sim: CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o
 nbody_sim: CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o
 nbody_sim: CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o
 nbody_sim: CMakeFiles/nbody_sim.dir/build.make
+nbody_sim: libglew.a
 nbody_sim: external/glfw/src/libglfw3.a
 nbody_sim: /usr/lib/x86_64-linux-gnu/librt.a
 nbody_sim: /usr/lib/x86_64-linux-gnu/libm.so
+nbody_sim: /usr/lib/x86_64-linux-gnu/libGLX.so
+nbody_sim: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 nbody_sim: CMakeFiles/nbody_sim.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/gib/Downloads/N-Body/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable nbody_sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nbody_sim.dir/link.txt --verbose=$(VERBOSE)

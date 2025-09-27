@@ -24,6 +24,10 @@ Renderer* renderer;
 Simulator* simulator;
 
 int main(int argc, char* argv[]) {
+  glfwSetErrorCallback([](int error, const char* description) {
+    std::cerr << "GLFW Error (" << error << "): " << description << std::endl;
+  });
+
   if (!glfwInit()) {
     std::cerr << "GLFW didn't load and fucked everything!\n";
   }

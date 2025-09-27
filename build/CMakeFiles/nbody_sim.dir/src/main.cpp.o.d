@@ -1,6 +1,7 @@
 CMakeFiles/nbody_sim.dir/src/main.cpp.o: \
  /home/gib/Downloads/N-Body/src/main.cpp /usr/include/stdc-predef.h \
- /usr/include/GL/glew.h /usr/include/c++/13/cstddef \
+ /home/gib/Downloads/N-Body/external/glew/include/GL/glew.h \
+ /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -92,12 +93,15 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /usr/include/glm/detail/qualifier.hpp /usr/include/glm/detail/setup.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/detail/qualifier.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/detail/setup.hpp \
  /usr/include/c++/13/cassert /usr/include/assert.h \
- /usr/include/glm/simd/platform.h /usr/include/glm/ext/vector_float2.hpp \
- /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/type_vec2.inl \
- /usr/include/glm/detail/compute_vector_relational.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/detail/../simd/platform.h \
+ /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_float2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/ext/../detail/type_vec2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/ext/../detail/type_vec2.inl \
+ /home/gib/Downloads/N-Body/external/glm/glm/ext/../detail/./compute_vector_relational.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/ext/../detail/./setup.hpp \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/stringfwd.h \
@@ -185,45 +189,66 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/gib/Downloads/N-Body/src/Simulator.hpp /usr/include/glm/vec2.hpp \
- /usr/include/glm/ext/vector_bool2.hpp \
- /usr/include/glm/ext/vector_bool2_precision.hpp \
- /usr/include/glm/ext/vector_float2_precision.hpp \
- /usr/include/glm/ext/vector_double2.hpp \
- /usr/include/glm/ext/vector_double2_precision.hpp \
- /usr/include/glm/ext/vector_int2.hpp \
- /usr/include/glm/ext/vector_int2_sized.hpp \
- /usr/include/glm/ext/scalar_int_sized.hpp \
- /usr/include/glm/detail/setup.hpp /usr/include/glm/ext/vector_uint2.hpp \
- /usr/include/glm/ext/vector_uint2_sized.hpp \
- /usr/include/glm/ext/scalar_uint_sized.hpp /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_uninitialized.h \
+ /home/gib/Downloads/N-Body/src/Simulator.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/vec2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool2_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_float2_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double2_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int2_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/scalar_int_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/../detail/setup.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint2_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/scalar_uint_sized.hpp \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /home/gib/Downloads/N-Body/src/Quadtree.hpp \
- /home/gib/Downloads/N-Body/src/Renderer.hpp /usr/include/glm/vec3.hpp \
- /usr/include/glm/ext/vector_bool3.hpp \
- /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/type_vec3.inl \
- /usr/include/glm/ext/vector_bool3_precision.hpp \
- /usr/include/glm/ext/vector_float3.hpp \
- /usr/include/glm/ext/vector_float3_precision.hpp \
- /usr/include/glm/ext/vector_double3.hpp \
- /usr/include/glm/ext/vector_double3_precision.hpp \
- /usr/include/glm/ext/vector_int3.hpp \
- /usr/include/glm/ext/vector_int3_sized.hpp \
- /usr/include/glm/ext/vector_uint3.hpp \
- /usr/include/glm/ext/vector_uint3_sized.hpp /usr/include/glm/vec4.hpp \
- /usr/include/glm/ext/vector_bool4.hpp \
- /usr/include/glm/detail/type_vec4.hpp \
- /usr/include/glm/detail/type_vec4.inl \
- /usr/include/glm/ext/vector_bool4_precision.hpp \
- /usr/include/glm/ext/vector_float4.hpp \
- /usr/include/glm/ext/vector_float4_precision.hpp \
- /usr/include/glm/ext/vector_double4.hpp \
- /usr/include/glm/ext/vector_double4_precision.hpp \
- /usr/include/glm/ext/vector_int4.hpp \
- /usr/include/glm/ext/vector_int4_sized.hpp \
- /usr/include/glm/ext/vector_uint4.hpp \
- /usr/include/glm/ext/vector_uint4_sized.hpp
+ /home/gib/Downloads/N-Body/src/Renderer.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/vec3.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool3.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/type_vec3.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/type_vec3.inl \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/compute_vector_decl.hpp \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/array \
+ /usr/include/c++/13/compare /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/_vectorize.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool3_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_float3.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_float3_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double3.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double3_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int3.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int3_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint3.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint3_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/vec4.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool4.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/type_vec4.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/type_vec4.inl \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool4_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_float4.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_float4_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double4.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double4_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/setup.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int4.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int4_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint4.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint4_sized.hpp

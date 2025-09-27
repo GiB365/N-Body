@@ -1,0 +1,2 @@
+/usr/bin/x86_64-w64-mingw32-ar qc libglew.a CMakeFiles/glew.dir/external/glew/src/glew.c.obj
+/usr/bin/x86_64-w64-mingw32-ranlib libglew.a
