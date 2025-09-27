@@ -1,3 +1,3 @@
 /usr/bin/cmake -E rm -f CMakeFiles/nbody_sim.dir/objects.a
 /usr/bin/x86_64-w64-mingw32-ar qc CMakeFiles/nbody_sim.dir/objects.a @CMakeFiles/nbody_sim.dir/objects1.rsp
-/usr/bin/x86_64-w64-mingw32-g++ -Wl,--whole-archive CMakeFiles/nbody_sim.dir/objects.a -Wl,--no-whole-archive -o nbody_sim.exe -Wl,--out-implib,libnbody_sim.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/nbody_sim.dir/linkLibs.rsp
+/usr/bin/x86_64-w64-mingw32-g++  -static-libgcc -static-libstdc++ -Wl,--whole-archive CMakeFiles/nbody_sim.dir/objects.a -Wl,--no-whole-archive -o nbody_sim.exe -Wl,--out-implib,libnbody_sim.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/nbody_sim.dir/linkLibs.rsp
