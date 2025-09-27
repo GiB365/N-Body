@@ -82,17 +82,6 @@ void Renderer::render(GLFWwindow* window, bool clear, bool wireframe) {
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
   }
 
-  glUseProgram(point_shader_program);
-
-  glBindBuffer(GL_ARRAY_BUFFER, points_vbo);
-  glBufferData(GL_ARRAY_BUFFER, points_data.size() * sizeof(float),
-               points_data.data(), GL_DYNAMIC_DRAW);
-
-  glBindVertexArray(points_vao);
-  glBindBuffer(GL_ARRAY_BUFFER, points_vbo);
-  glDrawArrays(GL_POINTS, 0, points_data.size() / 6);
-  glBindVertexArray(0);
-
   points_data.clear();
   glfwSwapBuffers(window);
 }
