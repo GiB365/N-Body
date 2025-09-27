@@ -529,3 +529,276 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw/CMakeLists.txt:52 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-IhyZIg"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-IhyZIg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-IhyZIg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e2135/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e2135.dir/build.make CMakeFiles/cmTC_e2135.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-IhyZIg'
+        Building C object CMakeFiles/cmTC_e2135.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e2135.dir/src.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-IhyZIg/src.c
+        Linking C executable cmTC_e2135
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2135.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e2135.dir/src.c.o -o cmTC_e2135 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-IhyZIg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "external/glfw/src/CMakeLists.txt:70 (check_function_exists)"
+    checks:
+      - "Looking for memfd_create"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-A6h0yI"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-A6h0yI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "HAVE_MEMFD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-A6h0yI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2917d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2917d.dir/build.make CMakeFiles/cmTC_2917d.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-A6h0yI'
+        Building C object CMakeFiles/cmTC_2917d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memfd_create -o CMakeFiles/cmTC_2917d.dir/CheckFunctionExists.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-A6h0yI/CheckFunctionExists.c
+        Linking C executable cmTC_2917d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2917d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memfd_create CMakeFiles/cmTC_2917d.dir/CheckFunctionExists.c.o -o cmTC_2917d 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-A6h0yI'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-PlKI46"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-PlKI46"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-PlKI46'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d6fae/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d6fae.dir/build.make CMakeFiles/cmTC_d6fae.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-PlKI46'
+        Building C object CMakeFiles/cmTC_d6fae.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_d6fae.dir/CheckFunctionExists.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-PlKI46/CheckFunctionExists.c
+        Linking C executable cmTC_d6fae
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6fae.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_d6fae.dir/CheckFunctionExists.c.o -o cmTC_d6fae  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-PlKI46'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-4SKBgv"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-4SKBgv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-4SKBgv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a27c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a27c9.dir/build.make CMakeFiles/cmTC_a27c9.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-4SKBgv'
+        Building C object CMakeFiles/cmTC_a27c9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_a27c9.dir/CheckFunctionExists.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-4SKBgv/CheckFunctionExists.c
+        Linking C executable cmTC_a27c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a27c9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_a27c9.dir/CheckFunctionExists.c.o -o cmTC_a27c9 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-4SKBgv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-RZAgki"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-RZAgki"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-RZAgki'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_56277/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_56277.dir/build.make CMakeFiles/cmTC_56277.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-RZAgki'
+        Building C object CMakeFiles/cmTC_56277.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_56277.dir/CheckFunctionExists.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-RZAgki/CheckFunctionExists.c
+        Linking C executable cmTC_56277
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56277.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_56277.dir/CheckFunctionExists.c.o -o cmTC_56277 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-RZAgki'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-amlwkv"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-amlwkv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-amlwkv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_96dc4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_96dc4.dir/build.make CMakeFiles/cmTC_96dc4.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-amlwkv'
+        Building C object CMakeFiles/cmTC_96dc4.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_96dc4.dir/CheckFunctionExists.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-amlwkv/CheckFunctionExists.c
+        Linking C executable cmTC_96dc4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96dc4.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_96dc4.dir/CheckFunctionExists.c.o -o cmTC_96dc4 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-amlwkv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-0Szjis"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-0Szjis"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-0Szjis'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dd4e7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dd4e7.dir/build.make CMakeFiles/cmTC_dd4e7.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-0Szjis'
+        Building C object CMakeFiles/cmTC_dd4e7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_dd4e7.dir/CheckFunctionExists.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-0Szjis/CheckFunctionExists.c
+        Linking C executable cmTC_dd4e7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd4e7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_dd4e7.dir/CheckFunctionExists.c.o -o cmTC_dd4e7 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-0Szjis'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindX11.cmake:739 (check_library_exists)"
+      - "external/glfw/src/CMakeLists.txt:176 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-sMZza8"
+      binary: "/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-sMZza8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-sMZza8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61b8f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_61b8f.dir/build.make CMakeFiles/cmTC_61b8f.dir/build
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-sMZza8'
+        Building C object CMakeFiles/cmTC_61b8f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_61b8f.dir/CheckFunctionExists.c.o -c /home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-sMZza8/CheckFunctionExists.c
+        Linking C executable cmTC_61b8f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61b8f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_61b8f.dir/CheckFunctionExists.c.o -o cmTC_61b8f  -lICE 
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/build/CMakeFiles/CMakeScratch/TryCompile-sMZza8'
+        
+      exitCode: 0
+...

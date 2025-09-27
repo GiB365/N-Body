@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/gib/Downloads/N-Body/build/CMakeFiles /home/gib/Downloads/N-Body/build//CMakeFiles/progress.marks
@@ -129,101 +174,153 @@ nbody_sim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/build
 .PHONY : nbody_sim/fast
 
-Quadtree.o: Quadtree.cpp.o
-.PHONY : Quadtree.o
+#=============================================================================
+# Target rules for targets named uninstall
+
+# Build rule for target.
+uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 uninstall
+.PHONY : uninstall
+
+# fast build rule for target.
+uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw/CMakeFiles/uninstall.dir/build.make external/glfw/CMakeFiles/uninstall.dir/build
+.PHONY : uninstall/fast
+
+#=============================================================================
+# Target rules for targets named glfw
+
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
+
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/glfw.dir/build.make external/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named update_mappings
+
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
+.PHONY : update_mappings
+
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/update_mappings.dir/build.make external/glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
+#=============================================================================
+# Target rules for targets named docs
+
+# Build rule for target.
+docs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs
+.PHONY : docs
+
+# fast build rule for target.
+docs/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw/docs/CMakeFiles/docs.dir/build.make external/glfw/docs/CMakeFiles/docs.dir/build
+.PHONY : docs/fast
+
+src/Quadtree.o: src/Quadtree.cpp.o
+.PHONY : src/Quadtree.o
 
 # target to build an object file
-Quadtree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Quadtree.cpp.o
-.PHONY : Quadtree.cpp.o
+src/Quadtree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o
+.PHONY : src/Quadtree.cpp.o
 
-Quadtree.i: Quadtree.cpp.i
-.PHONY : Quadtree.i
+src/Quadtree.i: src/Quadtree.cpp.i
+.PHONY : src/Quadtree.i
 
 # target to preprocess a source file
-Quadtree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Quadtree.cpp.i
-.PHONY : Quadtree.cpp.i
+src/Quadtree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.i
+.PHONY : src/Quadtree.cpp.i
 
-Quadtree.s: Quadtree.cpp.s
-.PHONY : Quadtree.s
+src/Quadtree.s: src/Quadtree.cpp.s
+.PHONY : src/Quadtree.s
 
 # target to generate assembly for a file
-Quadtree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Quadtree.cpp.s
-.PHONY : Quadtree.cpp.s
+src/Quadtree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.s
+.PHONY : src/Quadtree.cpp.s
 
-Renderer.o: Renderer.cpp.o
-.PHONY : Renderer.o
+src/Renderer.o: src/Renderer.cpp.o
+.PHONY : src/Renderer.o
 
 # target to build an object file
-Renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Renderer.cpp.o
-.PHONY : Renderer.cpp.o
+src/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o
+.PHONY : src/Renderer.cpp.o
 
-Renderer.i: Renderer.cpp.i
-.PHONY : Renderer.i
+src/Renderer.i: src/Renderer.cpp.i
+.PHONY : src/Renderer.i
 
 # target to preprocess a source file
-Renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Renderer.cpp.i
-.PHONY : Renderer.cpp.i
+src/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Renderer.cpp.i
+.PHONY : src/Renderer.cpp.i
 
-Renderer.s: Renderer.cpp.s
-.PHONY : Renderer.s
+src/Renderer.s: src/Renderer.cpp.s
+.PHONY : src/Renderer.s
 
 # target to generate assembly for a file
-Renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Renderer.cpp.s
-.PHONY : Renderer.cpp.s
+src/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Renderer.cpp.s
+.PHONY : src/Renderer.cpp.s
 
-Simulator.o: Simulator.cpp.o
-.PHONY : Simulator.o
+src/Simulator.o: src/Simulator.cpp.o
+.PHONY : src/Simulator.o
 
 # target to build an object file
-Simulator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Simulator.cpp.o
-.PHONY : Simulator.cpp.o
+src/Simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o
+.PHONY : src/Simulator.cpp.o
 
-Simulator.i: Simulator.cpp.i
-.PHONY : Simulator.i
+src/Simulator.i: src/Simulator.cpp.i
+.PHONY : src/Simulator.i
 
 # target to preprocess a source file
-Simulator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Simulator.cpp.i
-.PHONY : Simulator.cpp.i
+src/Simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Simulator.cpp.i
+.PHONY : src/Simulator.cpp.i
 
-Simulator.s: Simulator.cpp.s
-.PHONY : Simulator.s
+src/Simulator.s: src/Simulator.cpp.s
+.PHONY : src/Simulator.s
 
 # target to generate assembly for a file
-Simulator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/Simulator.cpp.s
-.PHONY : Simulator.cpp.s
+src/Simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Simulator.cpp.s
+.PHONY : src/Simulator.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -232,20 +329,28 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... docs"
+	@echo "... uninstall"
+	@echo "... update_mappings"
+	@echo "... glfw"
 	@echo "... nbody_sim"
-	@echo "... Quadtree.o"
-	@echo "... Quadtree.i"
-	@echo "... Quadtree.s"
-	@echo "... Renderer.o"
-	@echo "... Renderer.i"
-	@echo "... Renderer.s"
-	@echo "... Simulator.o"
-	@echo "... Simulator.i"
-	@echo "... Simulator.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/Quadtree.o"
+	@echo "... src/Quadtree.i"
+	@echo "... src/Quadtree.s"
+	@echo "... src/Renderer.o"
+	@echo "... src/Renderer.i"
+	@echo "... src/Renderer.s"
+	@echo "... src/Simulator.o"
+	@echo "... src/Simulator.i"
+	@echo "... src/Simulator.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
