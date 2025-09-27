@@ -74,60 +74,60 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.obj: CMakeFiles/nbody_sim.dir/includes_CXX
 CMakeFiles/nbody_sim.dir/src/main.cpp.obj: /home/gib/Downloads/N-Body/src/main.cpp
 CMakeFiles/nbody_sim.dir/src/main.cpp.obj: CMakeFiles/nbody_sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gib/Downloads/N-Body/winBuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/nbody_sim.dir/src/main.cpp.obj"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/main.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/main.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/main.cpp.obj -c /home/gib/Downloads/N-Body/src/main.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/main.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/main.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/main.cpp.obj -c /home/gib/Downloads/N-Body/src/main.cpp
 
 CMakeFiles/nbody_sim.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nbody_sim.dir/src/main.cpp.i"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/main.cpp > CMakeFiles/nbody_sim.dir/src/main.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/main.cpp > CMakeFiles/nbody_sim.dir/src/main.cpp.i
 
 CMakeFiles/nbody_sim.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nbody_sim.dir/src/main.cpp.s"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/main.cpp -o CMakeFiles/nbody_sim.dir/src/main.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/main.cpp -o CMakeFiles/nbody_sim.dir/src/main.cpp.s
 
 CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj: CMakeFiles/nbody_sim.dir/flags.make
 CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj: CMakeFiles/nbody_sim.dir/includes_CXX.rsp
 CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj: /home/gib/Downloads/N-Body/src/Renderer.cpp
 CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj: CMakeFiles/nbody_sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gib/Downloads/N-Body/winBuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj -c /home/gib/Downloads/N-Body/src/Renderer.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/Renderer.cpp.obj -c /home/gib/Downloads/N-Body/src/Renderer.cpp
 
 CMakeFiles/nbody_sim.dir/src/Renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nbody_sim.dir/src/Renderer.cpp.i"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/Renderer.cpp > CMakeFiles/nbody_sim.dir/src/Renderer.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/Renderer.cpp > CMakeFiles/nbody_sim.dir/src/Renderer.cpp.i
 
 CMakeFiles/nbody_sim.dir/src/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nbody_sim.dir/src/Renderer.cpp.s"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/Renderer.cpp -o CMakeFiles/nbody_sim.dir/src/Renderer.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/Renderer.cpp -o CMakeFiles/nbody_sim.dir/src/Renderer.cpp.s
 
 CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj: CMakeFiles/nbody_sim.dir/flags.make
 CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj: CMakeFiles/nbody_sim.dir/includes_CXX.rsp
 CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj: /home/gib/Downloads/N-Body/src/Simulator.cpp
 CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj: CMakeFiles/nbody_sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gib/Downloads/N-Body/winBuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj -c /home/gib/Downloads/N-Body/src/Simulator.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj -c /home/gib/Downloads/N-Body/src/Simulator.cpp
 
 CMakeFiles/nbody_sim.dir/src/Simulator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nbody_sim.dir/src/Simulator.cpp.i"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/Simulator.cpp > CMakeFiles/nbody_sim.dir/src/Simulator.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/Simulator.cpp > CMakeFiles/nbody_sim.dir/src/Simulator.cpp.i
 
 CMakeFiles/nbody_sim.dir/src/Simulator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nbody_sim.dir/src/Simulator.cpp.s"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/Simulator.cpp -o CMakeFiles/nbody_sim.dir/src/Simulator.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/Simulator.cpp -o CMakeFiles/nbody_sim.dir/src/Simulator.cpp.s
 
 CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj: CMakeFiles/nbody_sim.dir/flags.make
 CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj: CMakeFiles/nbody_sim.dir/includes_CXX.rsp
 CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj: /home/gib/Downloads/N-Body/src/Quadtree.cpp
 CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj: CMakeFiles/nbody_sim.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/gib/Downloads/N-Body/winBuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj -c /home/gib/Downloads/N-Body/src/Quadtree.cpp
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj -MF CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj.d -o CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.obj -c /home/gib/Downloads/N-Body/src/Quadtree.cpp
 
 CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.i"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/Quadtree.cpp > CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.i
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gib/Downloads/N-Body/src/Quadtree.cpp > CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.i
 
 CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.s"
-	x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/Quadtree.cpp -o CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.s
+	/usr/bin/x86_64-w64-mingw32-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gib/Downloads/N-Body/src/Quadtree.cpp -o CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.s
 
 # Object files for target nbody_sim
 nbody_sim_OBJECTS = \
