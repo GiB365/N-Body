@@ -7,6 +7,11 @@
 #include <iostream>
 #include "Simulator.hpp"
 
+#define EARTH_SCENE_KEY 49
+#define MARS_SCENE_KEY 50
+#define PERSPECTIVE_UP_KEY 65
+#define PERSPECTIVE_DOWN_KEY 68
+
 double last_frame_rate_update = 0;
 double last_frame_time = 0;
 int frame_count = 0;
@@ -70,6 +75,10 @@ int main(int argc, char* argv[]) {
 
     renderer->panning = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_MIDDLE);
 
+    if (renderer->panning && simulator->perspective != 0) {
+      simulator->changePerspective(renderer, 0, false);
+    }
+
     renderer->render(window);
 
     calculateFPS(window);
@@ -86,7 +95,7 @@ void calculateFPS(GLFWwindow* window) {
     frame_count = 0;
     last_frame_rate_update = glfwGetTime();
 
-    // std::cout << fps << std::endl;
+    std::cout << fps << std::endl;
   }
 
   frame_count++;
@@ -106,22 +115,34 @@ void onKeyPress(GLFWwindow* window, int key, int scancode, int action,
     return;
   }
 
-  switch (key - 48) {
-    case 1:
+  std::cout << key << std::endl;
+
+  switch (key) {
+    case EARTH_SCENE_KEY:
       loadEarthScene();
       break;
-    case 2:
+    case MARS_SCENE_KEY:
       loadMarsScene();
+      break;
+    case PERSPECTIVE_UP_KEY:
+      simulator->changePerspective(renderer, simulator->perspective + 1);
+      break;
+    case PERSPECTIVE_DOWN_KEY:
+      simulator->changePerspective(renderer, simulator->perspective - 1);
       break;
   }
 }
 
 void loadEarthScene() {
   simulator->clearBodies();
-  simulator->addBody(1, 100, glm::vec2(800, 0), glm::vec3(0.55),
-                     glm::vec2(0, 127));
   simulator->addBody(810, 400, glm::vec2(0, 0), glm::vec3(0.1, 0.3, 0.55),
                      glm::vec2(0, 0));
+  simulator->addBody(1, 100, glm::vec2(800, 0), glm::vec3(0.55),
+                     glm::vec2(0, 100));
+
+  simulator->perspective = 0;
+  renderer->camera_position = glm::vec2(0);
+  renderer->zoom = 1200;
 }
 
 void loadMarsScene() {
@@ -132,4 +153,8 @@ void loadMarsScene() {
                      glm::vec2(0, 110));
   simulator->addBody(1, 10, glm::vec2(800, 0), glm::vec3(0.7),
                      glm::vec2(0, 88));
+
+  simulator->perspective = 0;
+  renderer->camera_position = glm::vec2(0);
+  renderer->zoom = 1200;
 }

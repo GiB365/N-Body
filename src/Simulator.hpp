@@ -14,10 +14,13 @@ class Body {
   float mass;
   int radius;
 
-  Body(float mass, int radius, glm::vec2 position, glm::vec3 color,
-       glm::vec2 velocity);
+  std::vector<glm::vec2> trail_points;
+  int max_trail_length;
 
-  void render(Renderer* renderer);
+  Body(float mass, int radius, glm::vec2 position, glm::vec3 color,
+       glm::vec2 velocity, int max_trail_length);
+
+  void render(Renderer* renderer, bool show_trail);
 };
 
 class Simulator {
@@ -27,18 +30,25 @@ class Simulator {
   QuadTree* tree;
 
  public:
+  int perspective;
+  float max_trail_distance;
+
   Simulator(Renderer* renderer, int body_count = 0);
 
   void addBody(float mass, int radius, glm::vec2 position,
                glm::vec3 color = glm::vec3(1),
-               glm::vec2 velocity = glm::vec2(0, 0));
+               glm::vec2 velocity = glm::vec2(0, 0),
+               int max_trail_length = 100);
   void clearBodies();
 
-  void update(SimulationMethod method, double delta);
+  void update(SimulationMethod method, float delta, bool show_trail = true);
 
   void simple(double delta);
   void barnesHut(double delta);
   void fastMultipole(double delta);
 
-  void render();
+  void changePerspective(Renderer* renderer, int new_perspective,
+                         bool change_positions = true);
+
+  void render(bool show_trail);
 };
