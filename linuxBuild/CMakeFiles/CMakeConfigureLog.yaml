@@ -794,3 +794,146 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "external/freetype/CMakeLists.txt:261 (check_symbol_exists)"
+    checks:
+      - "Looking for dlopen"
+    directories:
+      source: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj"
+      binary: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/freetype/builds/cmake"
+    buildResult:
+      variable: "HAVE_DLOPEN_IN_LIBC"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7f8c0/fast
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7f8c0.dir/build.make CMakeFiles/cmTC_7f8c0.dir/build
+        gmake[2]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj'
+        Building C object CMakeFiles/cmTC_7f8c0.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_7f8c0.dir/CheckSymbolExists.c.o -c /home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj/CheckSymbolExists.c
+        Linking C executable cmTC_7f8c0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f8c0.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_7f8c0.dir/CheckSymbolExists.c.o -o cmTC_7f8c0 
+        gmake[2]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj'
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-BmiPxj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake-3.28/Modules/FindBZip2.cmake:93 (CHECK_SYMBOL_EXISTS)"
+      - "external/freetype/CMakeLists.txt:312 (find_package)"
+    checks:
+      - "Looking for BZ2_bzCompressInit"
+    directories:
+      source: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf"
+      binary: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/freetype/builds/cmake"
+    buildResult:
+      variable: "BZIP2_NEED_PREFIX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_03fd0/fast
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_03fd0.dir/build.make CMakeFiles/cmTC_03fd0.dir/build
+        gmake[2]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf'
+        Building C object CMakeFiles/cmTC_03fd0.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_03fd0.dir/CheckSymbolExists.c.o -c /home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf/CheckSymbolExists.c
+        Linking C executable cmTC_03fd0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03fd0.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_03fd0.dir/CheckSymbolExists.c.o -o cmTC_03fd0  /usr/lib/x86_64-linux-gnu/libbz2.so 
+        gmake[2]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf'
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-5NCMZf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "external/freetype/CMakeLists.txt:327 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm"
+      binary: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/freetype/builds/cmake"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cfa8a/fast
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cfa8a.dir/build.make CMakeFiles/cmTC_cfa8a.dir/build
+        gmake[2]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm'
+        Building C object CMakeFiles/cmTC_cfa8a.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_cfa8a.dir/CheckIncludeFile.c.o -c /home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm/CheckIncludeFile.c
+        Linking C executable cmTC_cfa8a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfa8a.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_cfa8a.dir/CheckIncludeFile.c.o -o cmTC_cfa8a 
+        gmake[2]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm'
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9S8hRm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "external/freetype/CMakeLists.txt:328 (check_include_file)"
+    checks:
+      - "Looking for fcntl.h"
+    directories:
+      source: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b"
+      binary: "/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/gib/Downloads/N-Body/external/freetype/builds/cmake"
+    buildResult:
+      variable: "HAVE_FCNTL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d16e3/fast
+        gmake[1]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d16e3.dir/build.make CMakeFiles/cmTC_d16e3.dir/build
+        gmake[2]: Entering directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b'
+        Building C object CMakeFiles/cmTC_d16e3.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d16e3.dir/CheckIncludeFile.c.o -c /home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b/CheckIncludeFile.c
+        Linking C executable cmTC_d16e3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d16e3.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d16e3.dir/CheckIncludeFile.c.o -o cmTC_d16e3 
+        gmake[2]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b'
+        gmake[1]: Leaving directory '/home/gib/Downloads/N-Body/linuxBuild/CMakeFiles/CMakeScratch/TryCompile-9aSI8b'
+        
+      exitCode: 0
+...

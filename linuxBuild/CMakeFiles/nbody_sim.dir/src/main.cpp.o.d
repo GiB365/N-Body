@@ -188,26 +188,12 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
- /home/gib/Downloads/N-Body/src/Simulator.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/vec2.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool2.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool2_precision.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_float2_precision.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double2.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double2_precision.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int2.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int2_sized.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/scalar_int_sized.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/../detail/setup.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint2.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint2_sized.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/scalar_uint_sized.hpp \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/gib/Downloads/N-Body/src/Quadtree.hpp \
+ /home/gib/Downloads/N-Body/src/UIElements.hpp \
  /home/gib/Downloads/N-Body/src/Renderer.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/vec3.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool3.hpp \
@@ -236,8 +222,11 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double3_precision.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int3.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int3_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/scalar_int_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/../detail/setup.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint3.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint3_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/../ext/scalar_uint_sized.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/vec4.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool4.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/../detail/type_vec4.hpp \
@@ -251,4 +240,44 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int4.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int4_sized.hpp \
  /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint4.hpp \
- /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint4_sized.hpp
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint4_sized.hpp \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/freetype.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/ft2build.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/ftheader.h \
+ /home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config/ftconfig.h \
+ /home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config/ftoption.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/ftstdlib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/13/stdlib.h \
+ /usr/include/setjmp.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/integer-types.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/public-macros.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/mac-support.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fttypes.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftsystem.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftimage.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fterrors.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftmoderr.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fterrdef.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /home/gib/Downloads/N-Body/src/Simulator.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/vec2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_bool2_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_float2_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_double2_precision.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_int2_sized.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint2.hpp \
+ /home/gib/Downloads/N-Body/external/glm/glm/./ext/vector_uint2_sized.hpp \
+ /home/gib/Downloads/N-Body/src/Quadtree.hpp

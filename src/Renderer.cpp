@@ -10,6 +10,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include "freetype/freetype.h"
 
 void checkCompileStatus(GLuint shader, const std::string& name);
 void checkLinkStatus(GLuint program, const std::string& name);
@@ -20,9 +21,17 @@ Renderer::Renderer() {
 
   glEnable(GL_PROGRAM_POINT_SIZE);
   glEnable(GL_POINT_SPRITE);
+  glEnable(GL_BLEND);
+  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+  // Create shader programs
+  createShaderProgram("../shaders/point_vertex.glsl",
+                      "../shaders/point_fragment.glsl", &point_shader_program);
+  createShaderProgram("../shaders/triangle_vertex.glsl",
+                      "../shaders/triangle_fragment.glsl",
+                      &triangle_shader_program);
 
   // Setup points vao and vbo
-
   glGenBuffers(1, &points_vbo);
 
   glGenVertexArrays(1, &points_vao);
@@ -45,101 +54,70 @@ Renderer::Renderer() {
                         (void*)(3 * sizeof(float)));
   glBindVertexArray(0);
 
-  // Create point shader
+  // Setup triangle vbo and vao
+  glGenBuffers(1, &triangle_vbo);
 
-  std::string point_vertex_shader_string =
-      shaderToString("../shaders/point_vertex.glsl");
-  std::string point_fragment_shader_string =
-      shaderToString("../shaders/point_fragment.glsl");
-
-  const char* point_vertex_source = point_vertex_shader_string.c_str();
-  const char* point_fragment_source = point_fragment_shader_string.c_str();
-
-  point_vertex_shader = glCreateShader(GL_VERTEX_SHADER);
-  glShaderSource(point_vertex_shader, 1, &point_vertex_source, nullptr);
-  glCompileShader(point_vertex_shader);
-
-  point_fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
-  glShaderSource(point_fragment_shader, 1, &point_fragment_source, nullptr);
-  glCompileShader(point_fragment_shader);
-
-  point_shader_program = glCreateProgram();
-  glAttachShader(point_shader_program, point_vertex_shader);
-  glAttachShader(point_shader_program, point_fragment_shader);
-  glLinkProgram(point_shader_program);
-
-  glDeleteShader(point_vertex_shader);
-  glDeleteShader(point_fragment_shader);
-
-  // Setup lines vao and vbo
-
-  glGenBuffers(1, &lines_vbo);
-
-  glGenVertexArrays(1, &lines_vao);
-  glBindVertexArray(lines_vao);
-  glBindBuffer(GL_ARRAY_BUFFER, lines_vbo);
+  glGenVertexArrays(1, &triangle_vao);
+  glBindVertexArray(triangle_vao);
+  glBindBuffer(GL_ARRAY_BUFFER, triangle_vbo);
   glBufferData(GL_ARRAY_BUFFER, 0, nullptr, GL_DYNAMIC_DRAW);
 
-  // Setup point 1
+  // Setup position
   glEnableVertexAttribArray(0);
-  glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), 0);
-
-  // Setup point 2
-  glEnableVertexAttribArray(1);
-  glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
-                        (void*)(2 * sizeof(float)));
-
-  // Setup thickness
-  glEnableVertexAttribArray(2);
-  glVertexAttribPointer(2, 1, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
-                        (void*)(4 * sizeof(float)));
+  glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), 0);
 
   // Setup color
-  glEnableVertexAttribArray(3);
-  glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float),
-                        (void*)(5 * sizeof(float)));
+  glEnableVertexAttribArray(1);
+  glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
+                        (void*)(2 * sizeof(float)));
 
-  // Create line shader
+  // Initialize freetype + font
+  if (FT_Init_FreeType(&freetype)) {
+    std::cerr << "Freetype library didn't load and fucked everything!"
+              << std::endl;
+  }
 
-  std::string line_vertex_shader_string =
-      shaderToString("../shaders/line_vertex.glsl");
-  std::string line_geometry_shader_string =
-      shaderToString("../shaders/line_geometry.glsl");
-  std::string line_fragment_shader_string =
-      shaderToString("../shaders/line_fragment.glsl");
+  if (FT_New_Face(freetype, "../fonts/charger-font/Charger-XRDo.otf", 0,
+                  &font_face)) {
+    std::cerr << "Freetype font didn't load and fucked everything!"
+              << std::endl;
+  }
 
-  const char* line_vertex_source = line_vertex_shader_string.c_str();
-  const char* line_geometry_source = line_geometry_shader_string.c_str();
-  const char* line_fragment_source = line_fragment_shader_string.c_str();
+  FT_Set_Pixel_Sizes(font_face, 0, 48);
 
-  line_vertex_shader = glCreateShader(GL_VERTEX_SHADER);
-  glShaderSource(line_vertex_shader, 1, &line_vertex_source, nullptr);
-  glCompileShader(line_vertex_shader);
+  glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
-  line_geometry_shader = glCreateShader(GL_GEOMETRY_SHADER);
-  glShaderSource(line_geometry_shader, 1, &line_geometry_source, nullptr);
-  glCompileShader(line_geometry_shader);
+  for (unsigned char c = 0; c < 128; c++) {
+    if (FT_Load_Char(font_face, c, FT_LOAD_RENDER)) {
+      std::cerr << "Freetype character didn't load and fucked everything!"
+                << std::endl;
+      continue;
+    }
 
-  line_fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
-  glShaderSource(line_fragment_shader, 1, &line_fragment_source, nullptr);
-  glCompileShader(line_fragment_shader);
+    GLuint texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, font_face->glyph->bitmap.width,
+                 font_face->glyph->bitmap.rows, 0, GL_RED, GL_UNSIGNED_BYTE,
+                 font_face->glyph->bitmap.buffer);
 
-  line_shader_program = glCreateProgram();
-  glAttachShader(line_shader_program, line_vertex_shader);
-  glAttachShader(line_shader_program, line_geometry_shader);
-  glAttachShader(line_shader_program, line_fragment_shader);
-  glLinkProgram(line_shader_program);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-  glDeleteShader(line_vertex_shader);
-  glDeleteShader(line_geometry_shader);
-  glDeleteShader(line_fragment_shader);
+    Character character = {
+        texture,
+        glm::vec2(font_face->glyph->bitmap.width,
+                  font_face->glyph->bitmap.rows),
+        glm::vec2(font_face->glyph->bitmap_left, font_face->glyph->bitmap_top),
+        (GLuint)font_face->glyph->advance.x};
 
-  checkCompileStatus(point_vertex_shader, "point vertex");
-  checkCompileStatus(point_fragment_shader, "point fragment");
+    Characters.insert(std::pair<char, Character>(c, character));
+  }
 
-  checkCompileStatus(line_vertex_shader, "line vertex");
-  checkCompileStatus(line_geometry_shader, "line geometry");
-  checkCompileStatus(line_fragment_shader, "line fragment");
+  FT_Done_Face(font_face);
+  FT_Done_FreeType(freetype);
 }
 
 void Renderer::addCircle(glm::vec2 position, float radius, glm::vec3 color) {
@@ -147,10 +125,12 @@ void Renderer::addCircle(glm::vec2 position, float radius, glm::vec3 color) {
                                          color.x, color.y, color.z});
 }
 
-void Renderer::addLine(glm::vec2 point1, glm::vec2 point2, float thickness,
-                       glm::vec3 color) {
-  lines_data.insert(lines_data.end(), {point1.x, point1.y, point2.x, point2.y,
-                                       thickness, color.x, color.y, color.z});
+void Renderer::addTriangle(glm::vec2 point1, glm::vec2 point2, glm::vec2 point3,
+                           glm::vec3 color) {
+  triangle_data.insert(triangle_data.end(),
+                       {point1.x, point1.y, color.x, color.y, color.z, point2.x,
+                        point2.y, color.x, color.y, color.z, point3.x, point3.y,
+                        color.x, color.y, color.z});
 }
 
 void Renderer::render(GLFWwindow* window, bool clear, bool wireframe) {
@@ -165,23 +145,7 @@ void Renderer::render(GLFWwindow* window, bool clear, bool wireframe) {
 
   int screen_width, screen_height;
   glfwGetWindowSize(window, &screen_width, &screen_height);
-
-  // Set uniforms for line shader
-  glUseProgram(line_shader_program);
   GLint uniform_location;
-  uniform_location = glGetUniformLocation(line_shader_program, "zoom");
-  glUniform1f(uniform_location, zoom);
-  uniform_location = glGetUniformLocation(line_shader_program, "resolution");
-  glUniform2f(uniform_location, screen_width, screen_height);
-  uniform_location = glGetUniformLocation(line_shader_program, "offset");
-  glUniform2f(uniform_location, camera_position.x, camera_position.y);
-
-  // Draw lines
-  glBindVertexArray(lines_vao);
-  glBindBuffer(GL_ARRAY_BUFFER, lines_vbo);
-  glBufferData(GL_ARRAY_BUFFER, lines_data.size() * sizeof(float),
-               lines_data.data(), GL_DYNAMIC_DRAW);
-  glDrawArrays(GL_POINTS, 0, lines_data.size() / 8);
 
   // Set uniforms for point shader
   glUseProgram(point_shader_program);
@@ -200,8 +164,22 @@ void Renderer::render(GLFWwindow* window, bool clear, bool wireframe) {
   glDrawArrays(GL_POINTS, 0, points_data.size() / 6);
   glBindVertexArray(0);
 
+  // Set uniforms for triangle shader
+  glUseProgram(triangle_shader_program);
+  uniform_location =
+      glGetUniformLocation(triangle_shader_program, "resolution");
+  glUniform2f(uniform_location, screen_width, screen_height);
+
+  // Draw triangles
+  glBindVertexArray(triangle_vao);
+  glBindBuffer(GL_ARRAY_BUFFER, triangle_vbo);
+  glBufferData(GL_ARRAY_BUFFER, triangle_data.size() * sizeof(float),
+               triangle_data.data(), GL_DYNAMIC_DRAW);
+  glDrawArrays(GL_TRIANGLES, 0, triangle_data.size() / 5);
+  glBindVertexArray(0);
+
   points_data.clear();
-  lines_data.clear();
+  triangle_data.clear();
   glfwSwapBuffers(window);
 }
 
@@ -217,14 +195,12 @@ std::string Renderer::shaderToString(const std::string& filename) {
     }
     shader_file.close();
   } else {
-    std::cerr << "Shader " << filename
-              << " didn't load and fucked everything!\n";
+    std::cerr << "Shader " << filename << " didn't load and fucked everything!"
+              << std::endl;
   }
 
   return result;
 }
-
-GLuint* Renderer::getShaderProgram() { return &point_shader_program; }
 
 glm::vec2 Renderer::getGlobalMousePosition(GLFWwindow* window) {
   int window_x, window_y;
@@ -244,7 +220,8 @@ glm::vec2 Renderer::getGlobalMousePosition(GLFWwindow* window) {
   return global_mouse_position;
 }
 
-void Renderer::processZoom(GLFWwindow* window, double yoffset) {
+void Renderer::processZoom(GLFWwindow* window, double yoffset,
+                           bool is_default_perspective) {
   glm::vec2 old_global_mouse_position = getGlobalMousePosition(window);
 
   if (yoffset < 0) {
@@ -253,7 +230,11 @@ void Renderer::processZoom(GLFWwindow* window, double yoffset) {
     zoom /= ZOOM_SCALING;
   }
 
-  glm::vec2 new_global_mouse_position = getGlobalMousePosition(window);
+  if (!is_default_perspective) {
+    return;
+  }
+
+  glm ::vec2 new_global_mouse_position = getGlobalMousePosition(window);
 
   camera_position += old_global_mouse_position - new_global_mouse_position;
 }
@@ -296,6 +277,32 @@ void checkLinkStatus(GLuint program, const std::string& name) {
     std::cerr << "ERROR: Program linking failed (" << name << ")\n"
               << log.data() << std::endl;
   }
+}
+
+void Renderer::createShaderProgram(const std::string& vertex_shader_path,
+                                   const std::string& fragment_shader_path,
+                                   GLuint* shader_program) {
+  std::string vertex_shader_string = shaderToString(vertex_shader_path);
+  std::string fragment_shader_string = shaderToString(fragment_shader_path);
+
+  const char* vertex_source = vertex_shader_string.c_str();
+  const char* fragment_source = fragment_shader_string.c_str();
+
+  GLuint vertex_shader = glCreateShader(GL_VERTEX_SHADER);
+  glShaderSource(vertex_shader, 1, &vertex_source, nullptr);
+  glCompileShader(vertex_shader);
+
+  GLuint fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
+  glShaderSource(fragment_shader, 1, &fragment_source, nullptr);
+  glCompileShader(fragment_shader);
+
+  *shader_program = glCreateProgram();
+  glAttachShader(*shader_program, vertex_shader);
+  glAttachShader(*shader_program, fragment_shader);
+  glLinkProgram(*shader_program);
+
+  glDeleteShader(vertex_shader);
+  glDeleteShader(fragment_shader);
 }
 
 #endif

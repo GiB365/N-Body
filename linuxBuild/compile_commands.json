@@ -1,0 +1,446 @@
+[
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild",
+  "command": "/usr/bin/cc -DGLEW_STATIC -I/home/gib/Downloads/N-Body/external/glew/include  -o CMakeFiles/glew.dir/external/glew/src/glew.c.o -c /home/gib/Downloads/N-Body/external/glew/src/glew.c",
+  "file": "/home/gib/Downloads/N-Body/external/glew/src/glew.c",
+  "output": "CMakeFiles/glew.dir/external/glew/src/glew.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild",
+  "command": "/usr/bin/c++ -DGLEW_STATIC -I/home/gib/Downloads/N-Body/external/glm -I/home/gib/Downloads/N-Body/external/glew/include -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -std=gnu++17 -o CMakeFiles/nbody_sim.dir/src/main.cpp.o -c /home/gib/Downloads/N-Body/src/main.cpp",
+  "file": "/home/gib/Downloads/N-Body/src/main.cpp",
+  "output": "CMakeFiles/nbody_sim.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild",
+  "command": "/usr/bin/c++ -DGLEW_STATIC -I/home/gib/Downloads/N-Body/external/glm -I/home/gib/Downloads/N-Body/external/glew/include -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -std=gnu++17 -o CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o -c /home/gib/Downloads/N-Body/src/Renderer.cpp",
+  "file": "/home/gib/Downloads/N-Body/src/Renderer.cpp",
+  "output": "CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild",
+  "command": "/usr/bin/c++ -DGLEW_STATIC -I/home/gib/Downloads/N-Body/external/glm -I/home/gib/Downloads/N-Body/external/glew/include -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -std=gnu++17 -o CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o -c /home/gib/Downloads/N-Body/src/Simulator.cpp",
+  "file": "/home/gib/Downloads/N-Body/src/Simulator.cpp",
+  "output": "CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild",
+  "command": "/usr/bin/c++ -DGLEW_STATIC -I/home/gib/Downloads/N-Body/external/glm -I/home/gib/Downloads/N-Body/external/glew/include -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -std=gnu++17 -o CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o -c /home/gib/Downloads/N-Body/src/Quadtree.cpp",
+  "file": "/home/gib/Downloads/N-Body/src/Quadtree.cpp",
+  "output": "CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild",
+  "command": "/usr/bin/c++ -DGLEW_STATIC -I/home/gib/Downloads/N-Body/external/glm -I/home/gib/Downloads/N-Body/external/glew/include -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -std=gnu++17 -o CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o -c /home/gib/Downloads/N-Body/src/UIElements.cpp",
+  "file": "/home/gib/Downloads/N-Body/src/UIElements.cpp",
+  "output": "CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/context.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/init.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/input.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/input.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/monitor.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/platform.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/platform.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/vulkan.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/vulkan.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/window.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/egl_context.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/egl_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/osmesa_context.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/osmesa_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/null_init.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/null_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/null_monitor.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/null_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/null_window.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/null_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/null_joystick.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/null_joystick.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/posix_module.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/posix_module.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/posix_time.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/posix_time.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/posix_thread.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/posix_thread.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/x11_init.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/x11_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/x11_monitor.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/x11_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/x11_window.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/x11_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/xkb_unicode.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/xkb_unicode.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/glx_context.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/glx_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_init.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/wl_init.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/wl_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_monitor.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/wl_monitor.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/wl_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/wl_window.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/wl_window.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/wl_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/linux_joystick.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/linux_joystick.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src",
+  "command": "/usr/bin/cc -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11 -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_poll.c.o -c /home/gib/Downloads/N-Body/external/glfw/src/posix_poll.c",
+  "file": "/home/gib/Downloads/N-Body/external/glfw/src/posix_poll.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/autofit/autofit.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/autofit/autofit.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/autofit/autofit.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/autofit/autofit.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftbase.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftbase.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftbase.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftbase.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftbbox.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftbbox.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftbbox.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftbbox.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftbdf.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftbdf.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftbdf.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftbdf.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftbitmap.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftbitmap.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftbitmap.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftbitmap.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftcid.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftcid.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftcid.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftcid.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftfstype.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftfstype.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftfstype.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftfstype.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftgasp.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftgasp.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftgasp.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftgasp.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftglyph.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftglyph.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftglyph.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftglyph.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftgxval.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftgxval.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftgxval.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftgxval.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftinit.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftinit.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftinit.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftinit.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftmm.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftmm.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftmm.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftmm.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftotval.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftotval.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftotval.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftotval.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftpatent.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftpatent.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftpatent.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftpatent.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftpfr.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftpfr.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftpfr.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftpfr.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftstroke.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftstroke.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftstroke.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftstroke.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftsynth.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftsynth.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftsynth.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftsynth.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/fttype1.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/fttype1.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/fttype1.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/fttype1.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftwinfnt.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftwinfnt.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftwinfnt.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/bdf/bdf.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/bdf/bdf.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/bdf/bdf.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/bdf/bdf.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/bzip2/ftbzip2.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/bzip2/ftbzip2.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/cache/ftcache.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/cache/ftcache.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/cache/ftcache.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/cff/cff.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/cff/cff.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/cff/cff.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/cff/cff.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/cid/type1cid.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/cid/type1cid.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/cid/type1cid.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/cid/type1cid.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/gzip/ftgzip.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/gzip/ftgzip.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/gzip/ftgzip.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/lzw/ftlzw.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/lzw/ftlzw.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/lzw/ftlzw.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/pcf/pcf.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/pcf/pcf.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/pcf/pcf.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/pcf/pcf.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/pfr/pfr.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/pfr/pfr.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/pfr/pfr.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/pfr/pfr.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/psaux/psaux.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/psaux/psaux.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/psaux/psaux.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/psaux/psaux.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/pshinter/pshinter.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/pshinter/pshinter.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/pshinter/pshinter.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/psnames/psnames.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/psnames/psnames.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/psnames/psnames.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/psnames/psnames.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/raster/raster.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/raster/raster.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/raster/raster.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/raster/raster.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/sdf/sdf.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/sdf/sdf.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/sdf/sdf.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/sdf/sdf.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/sfnt/sfnt.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/sfnt/sfnt.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/sfnt/sfnt.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/smooth/smooth.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/smooth/smooth.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/smooth/smooth.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/smooth/smooth.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/svg/svg.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/svg/svg.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/svg/svg.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/svg/svg.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/truetype/truetype.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/truetype/truetype.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/truetype/truetype.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/truetype/truetype.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/type1/type1.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/type1/type1.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/type1/type1.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/type1/type1.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/type42/type42.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/type42/type42.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/type42/type42.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/type42/type42.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/winfonts/winfnt.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/winfonts/winfnt.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/winfonts/winfnt.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/builds/unix/ftsystem.c.o -c /home/gib/Downloads/N-Body/external/freetype/builds/unix/ftsystem.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/builds/unix/ftsystem.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/builds/unix/ftsystem.c.o"
+},
+{
+  "directory": "/home/gib/Downloads/N-Body/linuxBuild/external/freetype",
+  "command": "/usr/bin/cc -DFT2_BUILD_LIBRARY -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config -fvisibility=hidden -o CMakeFiles/freetype.dir/src/base/ftdebug.c.o -c /home/gib/Downloads/N-Body/external/freetype/src/base/ftdebug.c",
+  "file": "/home/gib/Downloads/N-Body/external/freetype/src/base/ftdebug.c",
+  "output": "external/freetype/CMakeFiles/freetype.dir/src/base/ftdebug.c.o"
+}
+]

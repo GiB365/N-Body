@@ -1,3 +1,6 @@
+#ifndef NBODY_QUADTREE
+#define NBODY_QUADTREE
+
 #include <glm/ext/vector_float2.hpp>
 #include <vector>
 #include "Renderer.hpp"
@@ -39,3 +42,5 @@ class QuadTree {
   void render();
   void print();
 };
+
+#endif

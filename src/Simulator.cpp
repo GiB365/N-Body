@@ -1,5 +1,4 @@
 #include "Simulator.hpp"
-#include <algorithm>
 #include <cmath>
 #include <cstdlib>
 #include <glm/ext/vector_float2.hpp>
@@ -19,14 +18,14 @@ Body::Body(float mass, int radius, glm::vec2 position, glm::vec3 color,
   this->max_trail_length = max_trail_length;
 }
 
-void Body::render(Renderer* renderer, bool show_trail) {
-  renderer->addCircle(position, radius, color);
-
-  if (!show_trail) return;
-
-  for (int i = 0; i < trail_points.size(); i += 2) {
-    renderer->addLine(trail_points[i], trail_points[i + 1], radius, color);
+void Body::renderTrail(Renderer* renderer) {
+  for (int i = 0; i < trail_points.size(); i++) {
+    renderer->addCircle(trail_points[i], radius * 0.3, color * glm::vec3(0.8));
   }
+}
+
+void Body::renderBody(Renderer* renderer) {
+  renderer->addCircle(position, radius, color);
 }
 
 Simulator::Simulator(Renderer* renderer, int body_count) {
@@ -69,7 +68,7 @@ void Simulator::update(SimulationMethod method, float delta, bool show_trail) {
       continue;
     }
 
-    float max_trail_distance = std::min(bodies[i].radius * 0.5, 75.0);
+    float max_trail_distance = bodies[i].radius;
     float trail_distance = max_trail_distance;
 
     if (!bodies[i].trail_points.empty()) {
@@ -80,20 +79,11 @@ void Simulator::update(SimulationMethod method, float delta, bool show_trail) {
     }
 
     if (trail_distance >= max_trail_distance) {
-      if (!bodies[i].trail_points.empty()) {
-        bodies[i].trail_points.emplace_back(bodies[i].trail_points.back());
-      } else {
-        bodies[i].trail_points.emplace_back(bodies[i].position -
-                                            bodies[i].velocity);
-      }
-
       bodies[i].trail_points.emplace_back(bodies[i].position);
     }
 
     if (bodies[i].trail_points.size() >=
         100 * bodies[i].max_trail_length / bodies[i].radius) {
-      std::cout << "a" << std::endl;
-      bodies[i].trail_points.erase(bodies[i].trail_points.begin());
       bodies[i].trail_points.erase(bodies[i].trail_points.begin());
     }
   }
@@ -167,8 +157,14 @@ void Simulator::fastMultipole(double delta) {
 }
 
 void Simulator::render(bool show_trail) {
+  if (show_trail) {
+    for (int i = 0; i < bodies.size(); i++) {
+      bodies[i].renderTrail(renderer);
+    }
+  }
+
   for (int i = 0; i < bodies.size(); i++) {
-    bodies[i].render(renderer, show_trail);
+    bodies[i].renderBody(renderer);
   }
 }
 
@@ -198,10 +194,13 @@ void Simulator::changePerspective(Renderer* renderer, int new_perspective,
 
     for (int i = 0; i < bodies.size(); i++) {
       bodies[i].position -= perspective_position;
-      bodies[i].trail_points.clear();
     }
 
     renderer->camera_position = glm::vec2(0);
+  }
+
+  for (int i = 0; i < bodies.size(); i++) {
+    bodies[i].trail_points.clear();
   }
 }
 

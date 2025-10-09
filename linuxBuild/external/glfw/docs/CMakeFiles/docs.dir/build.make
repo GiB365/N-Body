@@ -68,7 +68,7 @@ include external/glfw/docs/CMakeFiles/docs.dir/progress.make
 
 external/glfw/docs/CMakeFiles/docs: external/glfw/docs/html/index.html
 
-external/glfw/docs/html/index.html: external/glfw/docs/Doxyfile
+external/glfw/docs/html/index.html: /home/gib/Downloads/N-Body/external/glfw/docs/Doxyfile
 external/glfw/docs/html/index.html: /home/gib/Downloads/N-Body/external/glfw/include/GLFW/glfw3.h
 external/glfw/docs/html/index.html: /home/gib/Downloads/N-Body/external/glfw/include/GLFW/glfw3native.h
 external/glfw/docs/html/index.html: /home/gib/Downloads/N-Body/external/glfw/docs/main.md

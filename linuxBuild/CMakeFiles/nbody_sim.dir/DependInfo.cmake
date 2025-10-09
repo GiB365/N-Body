@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/gib/Downloads/N-Body/src/Quadtree.cpp" "CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o" "gcc" "CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o.d"
   "/home/gib/Downloads/N-Body/src/Renderer.cpp" "CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o.d"
   "/home/gib/Downloads/N-Body/src/Simulator.cpp" "CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o" "gcc" "CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o.d"
+  "/home/gib/Downloads/N-Body/src/UIElements.cpp" "CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o" "gcc" "CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o.d"
   "/home/gib/Downloads/N-Body/src/main.cpp" "CMakeFiles/nbody_sim.dir/src/main.cpp.o" "gcc" "CMakeFiles/nbody_sim.dir/src/main.cpp.o.d"
   )
 

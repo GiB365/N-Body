@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/gib/Downloads/N-Body/CMakeLists.txt"
+  "/home/gib/Downloads/N-Body/external/freetype/CMakeLists.txt"
+  "/home/gib/Downloads/N-Body/external/freetype/builds/cmake/FindBrotliDec.cmake"
   "/home/gib/Downloads/N-Body/external/glfw/CMake/cmake_uninstall.cmake.in"
   "/home/gib/Downloads/N-Body/external/glfw/CMake/glfw3.pc.in"
   "/home/gib/Downloads/N-Body/external/glfw/CMake/glfw3Config.cmake.in"
@@ -27,26 +29,33 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakePackageConfigHelpers.cmake"
+  "/usr/share/cmake-3.28/Modules/CMakePushCheckState.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/share/cmake-3.28/Modules/CPack.cmake"
+  "/usr/share/cmake-3.28/Modules/CPackComponent.cmake"
   "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake"
   "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake"
   "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake"
   "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake"
   "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake"
+  "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
+  "/usr/share/cmake-3.28/Modules/FindBZip2.cmake"
   "/usr/share/cmake-3.28/Modules/FindDoxygen.cmake"
   "/usr/share/cmake-3.28/Modules/FindFontconfig.cmake"
   "/usr/share/cmake-3.28/Modules/FindFreetype.cmake"
   "/usr/share/cmake-3.28/Modules/FindOpenGL.cmake"
+  "/usr/share/cmake-3.28/Modules/FindPNG.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake"
   "/usr/share/cmake-3.28/Modules/FindThreads.cmake"
   "/usr/share/cmake-3.28/Modules/FindX11.cmake"
+  "/usr/share/cmake-3.28/Modules/FindZLIB.cmake"
   "/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake"
@@ -57,6 +66,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake"
   "/usr/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake"
   "/usr/share/cmake-3.28/Modules/WriteBasicConfigVersionFile.cmake"
+  "/usr/share/cmake-3.28/Templates/CPackConfig.cmake.in"
   )
 
 # The corresponding makefile is:
@@ -76,6 +86,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "external/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "external/glfw/docs/Doxyfile"
   "external/glfw/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "external/freetype/freetype-config-version.cmake"
+  "CPackConfig.cmake"
+  "CPackSourceConfig.cmake"
+  "external/freetype/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -86,4 +100,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "external/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "external/glfw/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
   "external/glfw/docs/CMakeFiles/docs.dir/DependInfo.cmake"
+  "external/freetype/CMakeFiles/freetype.dir/DependInfo.cmake"
   )

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o.d"
   "CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o"
   "CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o.d"
+  "CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o"
+  "CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o.d"
   "CMakeFiles/nbody_sim.dir/src/main.cpp.o"
   "CMakeFiles/nbody_sim.dir/src/main.cpp.o.d"
   "nbody_sim"

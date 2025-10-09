@@ -181,7 +181,37 @@ CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
- /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/cmath \
+ /usr/include/c++/13/bits/basic_string.tcc \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/freetype.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/ft2build.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/ftheader.h \
+ /home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config/ftconfig.h \
+ /home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config/ftoption.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/ftstdlib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/13/stdlib.h \
+ /usr/include/setjmp.h /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/integer-types.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/public-macros.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/mac-support.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fttypes.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftsystem.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftimage.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fterrors.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftmoderr.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fterrdef.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -218,9 +248,6 @@ CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/13/bits/locale_classes.h \

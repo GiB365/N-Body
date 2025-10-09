@@ -1,3 +1,6 @@
+#ifndef NBODY_SIMULATOR
+#define NBODY_SIMULATOR
+
 #include <glm/ext/vector_float2.hpp>
 #include <glm/vec2.hpp>
 #include <vector>
@@ -20,7 +23,8 @@ class Body {
   Body(float mass, int radius, glm::vec2 position, glm::vec3 color,
        glm::vec2 velocity, int max_trail_length);
 
-  void render(Renderer* renderer, bool show_trail);
+  void renderBody(Renderer* renderer);
+  void renderTrail(Renderer* renderer);
 };
 
 class Simulator {
@@ -52,3 +56,5 @@ class Simulator {
 
   void render(bool show_trail);
 };
+
+#endif
