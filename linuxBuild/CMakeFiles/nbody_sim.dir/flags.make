@@ -6,5 +6,5 @@ CXX_DEFINES = -DGLEW_STATIC
 
 CXX_INCLUDES = -I/home/gib/Downloads/N-Body/external/glm -I/home/gib/Downloads/N-Body/external/glew/include -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -O2 -g -DNDEBUG -std=gnu++17
 

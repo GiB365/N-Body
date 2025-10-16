@@ -3,13 +3,16 @@
 #include <cstdlib>
 #include <glm/ext/vector_float2.hpp>
 #include <iostream>
+#include <vector>
+#include "Renderer.hpp"
 
 const float GRAVITATIONAL_CONSTANT = 10000;
 
 int rand_range(int min, int max);
 
-Body::Body(float mass, int radius, glm::vec2 position, glm::vec3 color,
-           glm::vec2 velocity, int max_trail_length) {
+Body::Body(std::string name, float mass, int radius, glm::vec2 position,
+           glm::vec3 color, glm::vec2 velocity, int max_trail_length) {
+  this->name = name;
   this->mass = mass;
   this->radius = radius;
   this->position = position;
@@ -28,6 +31,14 @@ void Body::renderBody(Renderer* renderer) {
   renderer->addCircle(position, radius, color);
 }
 
+void Body::renderName(Renderer* renderer) {
+  if (name.empty()) {
+    return;
+  }
+
+  renderer->addText(name, position, 0.5, false);
+}
+
 Simulator::Simulator(Renderer* renderer, int body_count) {
   this->renderer = renderer;
   this->tree = new QuadTree(renderer);
@@ -42,7 +53,8 @@ Simulator::Simulator(Renderer* renderer, int body_count) {
   }
 }
 
-void Simulator::update(SimulationMethod method, float delta, bool show_trail) {
+void Simulator::update(SimulationMethod method, float delta, bool show_names,
+                       bool show_trails) {
   switch (method) {
     case SimulationMethod::Simple:
       simple(delta);
@@ -88,7 +100,7 @@ void Simulator::update(SimulationMethod method, float delta, bool show_trail) {
     }
   }
 
-  render(show_trail);
+  render(show_names, show_trails);
 }
 
 void Simulator::simple(double delta) {
@@ -156,8 +168,14 @@ void Simulator::fastMultipole(double delta) {
   std::cerr << "Unimplemented" << std::endl;
 }
 
-void Simulator::render(bool show_trail) {
-  if (show_trail) {
+void Simulator::render(bool show_names, bool show_trails) {
+  if (show_names) {
+    for (int i = 0; i < bodies.size(); i++) {
+      bodies[i].renderName(renderer);
+    }
+  }
+
+  if (show_trails) {
     for (int i = 0; i < bodies.size(); i++) {
       bodies[i].renderTrail(renderer);
     }
@@ -169,10 +187,10 @@ void Simulator::render(bool show_trail) {
 }
 
 void Simulator::addBody(float mass, int radius, glm::vec2 position,
-                        glm::vec3 color, glm::vec2 velocity,
+                        glm::vec3 color, glm::vec2 velocity, std::string name,
                         int max_trail_length) {
   bodies.emplace_back(
-      Body(mass, radius, position, color, velocity, max_trail_length));
+      Body(name, mass, radius, position, color, velocity, max_trail_length));
 }
 
 void Simulator::clearBodies() { bodies.clear(); }
@@ -184,6 +202,11 @@ void Simulator::changePerspective(Renderer* renderer, int new_perspective,
   if (perspective == bodies.size()) {
     perspective = 0;
   } else if (perspective == -1) {
+    if (!change_positions) {
+      perspective = -1;
+      return;
+    }
+
     perspective = bodies.size() - 1;
   }
 

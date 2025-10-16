@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/gib/Downloads/N-Body/winBuild/external/glfw/cmake_install.cmake")
+  include("/home/gib/Downloads/N-Body/winBuild/external/freetype/cmake_install.cmake")
 
 endif()
 

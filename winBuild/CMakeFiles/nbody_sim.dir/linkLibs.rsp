@@ -1,1 +1,1 @@
- libglew.a external/glfw/src/libglfw3.a -lopengl32 -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+ libglew.a external/glfw/src/libglfw3.a -lopengl32 external/freetype/libfreetype.a -lpthread "/usr/lib/x86_64-linux-gnu/libbrotlidec.a" -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

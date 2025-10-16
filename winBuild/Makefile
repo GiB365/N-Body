@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /home/gib/Downloads/N-Body/winBuild
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/gib/Downloads/N-Body/winBuild/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -87,7 +107,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -239,6 +259,19 @@ docs/fast:
 	$(MAKE) $(MAKESILENT) -f external/glfw/docs/CMakeFiles/docs.dir/build.make external/glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
+#=============================================================================
+# Target rules for targets named freetype
+
+# Build rule for target.
+freetype: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 freetype
+.PHONY : freetype
+
+# fast build rule for target.
+freetype/fast:
+	$(MAKE) $(MAKESILENT) -f external/freetype/CMakeFiles/freetype.dir/build.make external/freetype/CMakeFiles/freetype.dir/build
+.PHONY : freetype/fast
+
 external/glew/src/glew.obj: external/glew/src/glew.c.obj
 .PHONY : external/glew/src/glew.obj
 
@@ -335,6 +368,30 @@ src/Simulator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/Simulator.cpp.s
 .PHONY : src/Simulator.cpp.s
 
+src/UIElements.obj: src/UIElements.cpp.obj
+.PHONY : src/UIElements.obj
+
+# target to build an object file
+src/UIElements.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj
+.PHONY : src/UIElements.cpp.obj
+
+src/UIElements.i: src/UIElements.cpp.i
+.PHONY : src/UIElements.i
+
+# target to preprocess a source file
+src/UIElements.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/UIElements.cpp.i
+.PHONY : src/UIElements.cpp.i
+
+src/UIElements.s: src/UIElements.cpp.s
+.PHONY : src/UIElements.s
+
+# target to generate assembly for a file
+src/UIElements.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nbody_sim.dir/build.make CMakeFiles/nbody_sim.dir/src/UIElements.cpp.s
+.PHONY : src/UIElements.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -370,10 +427,13 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... docs"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... freetype"
 	@echo "... glew"
 	@echo "... glfw"
 	@echo "... nbody_sim"
@@ -389,6 +449,9 @@ help:
 	@echo "... src/Simulator.obj"
 	@echo "... src/Simulator.i"
 	@echo "... src/Simulator.s"
+	@echo "... src/UIElements.obj"
+	@echo "... src/UIElements.i"
+	@echo "... src/UIElements.s"
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

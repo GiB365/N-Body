@@ -1,1 +1,1 @@
--I"/home/gib/Downloads/N-Body/external/glm" -I"/home/gib/Downloads/N-Body/external/glew/include" -I"/home/gib/Downloads/N-Body/external/glfw/include"
+-I"/home/gib/Downloads/N-Body/external/glm" -I"/home/gib/Downloads/N-Body/external/glew/include" -I"/home/gib/Downloads/N-Body/external/glfw/include" -I"/home/gib/Downloads/N-Body/winBuild/external/freetype/include" -I"/home/gib/Downloads/N-Body/external/freetype/include"

@@ -6,5 +6,5 @@ C_DEFINES = -DFT2_BUILD_LIBRARY
 
 C_INCLUDES = -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include -I/home/gib/Downloads/N-Body/external/freetype/include -I/home/gib/Downloads/N-Body/linuxBuild/external/freetype/include/freetype/config
 
-C_FLAGS = -fvisibility=hidden
+C_FLAGS = -O2 -g -DNDEBUG -fvisibility=hidden
 

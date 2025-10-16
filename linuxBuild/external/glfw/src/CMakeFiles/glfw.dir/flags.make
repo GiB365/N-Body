@@ -6,5 +6,5 @@ C_DEFINES = -DHAVE_MEMFD_CREATE -D_DEFAULT_SOURCE -D_GLFW_WAYLAND -D_GLFW_X11
 
 C_INCLUDES = -I/home/gib/Downloads/N-Body/external/glfw/include -I/home/gib/Downloads/N-Body/external/glfw/src -I/home/gib/Downloads/N-Body/linuxBuild/external/glfw/src
 
-C_FLAGS = -std=c99 -fPIC -Wall
+C_FLAGS = -O2 -g -DNDEBUG -std=c99 -fPIC -Wall
 

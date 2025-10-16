@@ -21,21 +21,31 @@ struct Character {
   GLuint Advance;
 };
 
+struct TextData {
+  std::string text;
+  glm::vec2 position;
+  float scale;
+  bool percentage_coords;
+  glm::vec3 color;
+  bool centered;
+};
+
 class Renderer {
  private:
-  GLuint points_vao, points_vbo, triangle_vao, triangle_vbo;
+  GLuint points_vao, points_vbo, triangle_vao, triangle_vbo, text_vao, text_vbo;
 
   const float ZOOM_SCALING = 1.1;
 
   std::vector<float> points_data;    // {x, y, radius, r, g, b}
   std::vector<float> triangle_data;  // {x1, y1, x2, y2, x3, y3, r, g, b}
+  std::vector<TextData> text_data;   // {text, position, scale, color}
 
   FT_Library freetype;
   FT_Face font_face;
   std::map<char, Character> Characters;
 
  public:
-  GLuint point_shader_program, triangle_shader_program;
+  GLuint point_shader_program, triangle_shader_program, text_shader_program;
 
   glm::vec2 camera_position;
   glm::vec2 previous_mouse_position;
@@ -43,13 +53,20 @@ class Renderer {
   float zoom;
 
   Renderer();
+  void initializeFreeType();
 
   void addCircle(glm::vec2 position, float radius,
                  glm::vec3 color = glm::vec3(1.0));
   void addTriangle(glm::vec2 point1, glm::vec2 point2, glm::vec2 point3,
                    glm::vec3 color = glm::vec3(1.0));
+  void addText(std::string text, glm::vec2 position, float scale,
+               bool percentage_coords, glm::vec3 color = glm::vec3(1.0),
+               bool centered = true);
 
   void render(GLFWwindow* window, bool clear = true, bool wireframe = false);
+  void renderText(GLFWwindow* window, std::string text, glm::vec2 position,
+                  float scale, bool percentage_coords, glm::vec3 color,
+                  bool centered);
 
   std::string shaderToString(const std::string& filename);
 

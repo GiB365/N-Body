@@ -1,32 +1,34 @@
 #include "UIElements.hpp"
 #include <iostream>
+#include "glm/ext/vector_float2.hpp"
 
 Button::Button(const char* text, glm::vec2 position, glm::vec2 size,
-               void (*clickedCallback)(), glm::vec3 background_color) {
+               void (*clickedCallback)(), glm::vec3 background_color,
+               glm::vec2 centered) {
   this->text = text;
-  this->x = position.x;
-  this->y = position.y;
-  this->width = size.x;
-  this->height = size.y;
+  this->position = position;
+  this->size = size;
   this->clickedCallback = clickedCallback;
   this->background_color = background_color;
+
+  if (centered.x) {
+    this->position.x = position.x - size.x / 2.0;
+  }
+  if (centered.y) {
+    this->position.y = position.y - size.y / 2.0;
+  }
 
   this->calculateCorners();
 }
 
 void Button::checkButtonClicked(glm::vec2 mouse_screen_position) {
-  float x_distance = 100 * mouse_screen_position.x - x;
-  float y_distance = 100 * mouse_screen_position.y - y;
-
-  bool within_x = x_distance > 0 && x_distance < width;
-  bool within_y = y_distance > 0 && y_distance < height;
-
-  std::cout << mouse_screen_position.x << " " << mouse_screen_position.y
-            << std::endl;
+  float x_distance = abs(100 * mouse_screen_position.x - position.x);
+  float y_distance = abs(100 * mouse_screen_position.y - position.y);
 
   std::cout << x_distance << " " << y_distance << std::endl;
 
-  std::cout << width << " " << height << std::endl;
+  bool within_x = x_distance > 0 && x_distance < size.x;
+  bool within_y = y_distance > 0 && y_distance < abs(size.y);
 
   if (!within_x || !within_y) {
     return;
@@ -40,11 +42,17 @@ void Button::render(Renderer* renderer) {
                         background_color);
   renderer->addTriangle(button_corners[1], button_corners[2], button_corners[3],
                         background_color);
+
+  glm::vec2 text_position = glm::vec2((2 * position.x + size.x) / 2.0,
+                                      (2 * position.y + size.y) / 2.0);
+
+  renderer->addText(text, text_position, size.y, true);
 }
 
 void Button::calculateCorners() {
-  button_corners.emplace_back(glm::vec2(x, -y));
-  button_corners.emplace_back(glm::vec2(x + width, -y));
-  button_corners.emplace_back(glm::vec2(x, -y - height));
-  button_corners.emplace_back(glm::vec2(x + width, -y - height));
+  button_corners.emplace_back(glm::vec2(position.x, position.y));
+  button_corners.emplace_back(glm::vec2(position.x + size.x, position.y));
+  button_corners.emplace_back(glm::vec2(position.x, position.y + size.y));
+  button_corners.emplace_back(
+      glm::vec2(position.x + size.x, position.y + size.y));
 }

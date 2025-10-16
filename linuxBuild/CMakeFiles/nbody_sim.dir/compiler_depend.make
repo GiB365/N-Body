@@ -118,9 +118,12 @@ CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o: /home/gib/Downloads/N-Body/src/Quad
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/string_view.tcc \
@@ -154,6 +157,7 @@ CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o: /home/gib/Downloads/N-Body/src/Quad
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/new \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
@@ -223,13 +227,23 @@ CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o: /home/gib/Downloads/N-Body/src/Quad
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -263,6 +277,8 @@ CMakeFiles/nbody_sim.dir/src/Quadtree.cpp.o: /home/gib/Downloads/N-Body/src/Quad
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
@@ -346,6 +362,7 @@ CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o: /home/gib/Downloads/N-Body/src/Rend
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/array \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
@@ -408,8 +425,11 @@ CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o: /home/gib/Downloads/N-Body/src/Rend
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
@@ -451,8 +471,11 @@ CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o: /home/gib/Downloads/N-Body/src/Rend
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
@@ -527,13 +550,23 @@ CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o: /home/gib/Downloads/N-Body/src/Rend
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -572,6 +605,8 @@ CMakeFiles/nbody_sim.dir/src/Renderer.cpp.o: /home/gib/Downloads/N-Body/src/Rend
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
@@ -737,8 +772,11 @@ CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o: /home/gib/Downloads/N-Body/src/Sim
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
@@ -779,6 +817,7 @@ CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o: /home/gib/Downloads/N-Body/src/Sim
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -855,13 +894,23 @@ CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o: /home/gib/Downloads/N-Body/src/Sim
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -900,6 +949,8 @@ CMakeFiles/nbody_sim.dir/src/Simulator.cpp.o: /home/gib/Downloads/N-Body/src/Sim
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
@@ -1051,8 +1102,11 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o: /home/gib/Downloads/N-Body/src/UI
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
@@ -1092,6 +1146,7 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o: /home/gib/Downloads/N-Body/src/UI
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -1146,13 +1201,23 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o: /home/gib/Downloads/N-Body/src/UI
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -1191,6 +1256,8 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.o: /home/gib/Downloads/N-Body/src/UI
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
@@ -1355,8 +1422,11 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
@@ -1397,6 +1467,7 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/pstl_config.h \
@@ -1473,13 +1544,23 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -1518,6 +1599,8 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2-decl.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
@@ -1558,8 +1641,6 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_uint2_sized.hpp:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_uint2.hpp:
-
-/home/gib/Downloads/N-Body/external/glm/glm/ext/vector_int2.hpp:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_float2_precision.hpp:
 
@@ -1623,8 +1704,6 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
 
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
 
-/usr/include/c++/13/bits/codecvt.h:
-
 /usr/include/c++/13/bits/basic_ios.tcc:
 
 /usr/include/c++/13/bits/basic_ios.h:
@@ -1659,11 +1738,19 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/c++/13/bits/vector.tcc:
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/usr/include/c++/13/bits/stl_function.h:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/c++/13/tr1/beta_function.tcc:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
@@ -1674,6 +1761,8 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
 /usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/stl_map.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -1715,8 +1804,6 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/usr/include/c++/13/bits/ptr_traits.h:
-
 /usr/include/c++/13/bits/predefined_ops.h:
 
 /usr/include/c++/13/iosfwd:
@@ -1724,6 +1811,10 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
 /usr/include/c++/13/bits/ostream_insert.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/detail/type_vec4.hpp:
+
+/usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/c++/13/tr1/beta_function.tcc:
 
 /usr/include/c++/13/bits/move.h:
 
@@ -1754,6 +1845,8 @@ CMakeFiles/nbody_sim.dir/src/main.cpp.o: /home/gib/Downloads/N-Body/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2-decl.h:
 
 /usr/include/c++/13/bits/erase_if.h:
 
@@ -1803,7 +1896,7 @@ external/freetype/include/freetype/config/ftoption.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
 
@@ -1819,8 +1912,6 @@ external/freetype/include/freetype/config/ftoption.h:
 
 /usr/include/c++/13/bits/exception.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
 /usr/include/c++/13/bits/deque.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -1829,7 +1920,15 @@ external/freetype/include/freetype/config/ftoption.h:
 
 /usr/include/GL/glu.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/c++/13/bits/stl_tree.h:
+
+/home/gib/Downloads/N-Body/external/freetype/include/freetype/freetype.h:
+
+/home/gib/Downloads/N-Body/external/glm/glm/ext/vector_bool4.hpp:
+
+/home/gib/Downloads/N-Body/external/glm/glm/detail/qualifier.hpp:
 
 /home/gib/Downloads/N-Body/external/glm/glm/detail/setup.hpp:
 
@@ -1848,6 +1947,12 @@ external/freetype/include/freetype/config/ftoption.h:
 /usr/include/c++/13/bits/allocator.h:
 
 /usr/include/c++/13/unordered_map:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/home/gib/Downloads/N-Body/external/glm/glm/simd/platform.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
@@ -1869,11 +1974,9 @@ external/freetype/include/freetype/config/ftoption.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/home/gib/Downloads/N-Body/external/freetype/include/freetype/freetype.h:
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/home/gib/Downloads/N-Body/external/glm/glm/ext/vector_bool4.hpp:
-
-/home/gib/Downloads/N-Body/external/glm/glm/detail/qualifier.hpp:
+/usr/include/c++/13/bits/stl_multimap.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_uint3_sized.hpp:
 
@@ -1900,8 +2003,6 @@ external/freetype/include/freetype/config/ftoption.h:
 /usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/home/gib/Downloads/N-Body/external/freetype/include/freetype/fttypes.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -1937,16 +2038,6 @@ external/freetype/include/freetype/config/ftoption.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_float3.hpp:
 
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
 /home/gib/Downloads/N-Body/src/Quadtree.hpp:
 
 /usr/include/c++/13/cerrno:
@@ -1975,6 +2066,16 @@ external/freetype/include/freetype/config/ftoption.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_uint4.hpp:
 
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/detail/compute_vector_relational.hpp:
@@ -1985,6 +2086,12 @@ external/freetype/include/freetype/config/ftoption.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_uint4_sized.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/home/gib/Downloads/N-Body/external/glm/glm/detail/type_vec3.inl:
+
+/home/gib/Downloads/N-Body/external/glm/glm/detail/type_vec2.inl:
+
 /usr/include/c++/13/ext/string_conversions.h:
 
 /home/gib/Downloads/N-Body/external/glfw/include/GLFW/glfw3.h:
@@ -1992,6 +2099,8 @@ external/freetype/include/freetype/config/ftoption.h:
 /usr/include/c++/13/bits/stringfwd.h:
 
 external/freetype/include/freetype/config/ftconfig.h:
+
+/usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
@@ -2009,13 +2118,13 @@ external/freetype/include/freetype/config/ftconfig.h:
 
 /usr/include/c++/13/clocale:
 
-/usr/include/c++/13/cmath:
-
 /usr/include/c++/13/system_error:
 
 /usr/include/c++/13/compare:
 
 /usr/include/c++/13/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/bits/select-decl.h:
 
 /usr/include/c++/13/deque:
 
@@ -2031,13 +2140,23 @@ external/freetype/include/freetype/config/ftconfig.h:
 
 /usr/include/c++/13/new:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/home/gib/Downloads/N-Body/external/glm/glm/ext/vector_int4_sized.hpp:
+
+/usr/include/c++/13/ext/numeric_traits.h:
 
 /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftmoderr.h:
 
 /usr/include/c++/13/ext/type_traits.h:
 
 /usr/include/c++/13/functional:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/c++/13/limits:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
@@ -2046,8 +2165,6 @@ external/freetype/include/freetype/config/ftconfig.h:
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_float4_precision.hpp:
 
 /usr/include/c++/13/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -2119,15 +2236,13 @@ external/freetype/include/freetype/config/ftconfig.h:
 
 /usr/include/string.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/usr/include/c++/13/bits/stl_iterator.h:
+/home/gib/Downloads/N-Body/external/glm/glm/ext/vector_int2.hpp:
 
-/home/gib/Downloads/N-Body/external/glm/glm/ext/vector_int4_sized.hpp:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_float2.hpp:
 
@@ -2145,13 +2260,11 @@ external/freetype/include/freetype/config/ftconfig.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/c++/13/limits:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/c++/13/map:
 
 /usr/include/c++/13/string_view:
 
@@ -2177,6 +2290,10 @@ external/freetype/include/freetype/config/ftconfig.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/c++/13/cmath:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
@@ -2185,11 +2302,23 @@ external/freetype/include/freetype/config/ftconfig.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/setjmp2.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:
+
+/home/gib/Downloads/N-Body/external/freetype/include/freetype/fttypes.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -2207,20 +2336,6 @@ external/freetype/include/freetype/config/ftconfig.h:
 
 /home/gib/Downloads/N-Body/external/glm/glm/ext/vector_bool3_precision.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/home/gib/Downloads/N-Body/external/glm/glm/simd/platform.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/home/gib/Downloads/N-Body/external/glm/glm/detail/type_vec3.inl:
-
-/home/gib/Downloads/N-Body/external/glm/glm/detail/type_vec2.inl:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:

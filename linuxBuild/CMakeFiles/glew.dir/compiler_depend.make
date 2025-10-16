@@ -27,7 +27,9 @@ CMakeFiles/glew.dir/external/glew/src/glew.c.o: /home/gib/Downloads/N-Body/exter
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -98,13 +100,19 @@ CMakeFiles/glew.dir/external/glew/src/glew.c.o: /home/gib/Downloads/N-Body/exter
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
 /usr/include/X11/Xosdefs.h:
 
 /usr/include/X11/Xlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+/usr/include/x86_64-linux-gnu/bits/select2.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -121,10 +129,6 @@ CMakeFiles/glew.dir/external/glew/src/glew.c.o: /home/gib/Downloads/N-Body/exter
 /usr/include/X11/keysym.h:
 
 /usr/include/GL/glu.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -167,3 +171,5 @@ CMakeFiles/glew.dir/external/glew/src/glew.c.o: /home/gib/Downloads/N-Body/exter
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/select-decl.h:
