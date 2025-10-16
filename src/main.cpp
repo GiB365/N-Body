@@ -18,12 +18,14 @@
 #define URANUS_SCENE_KEY 55
 #define NEPTUNE_SCENE_KEY 56
 #define SOLAR_SYSTEM_SCENE_KEY 57
-#define THREE_BODY_SCENE_KEY 58
+#define THREE_BODY_SCENE_KEY 48
 
 #define PERSPECTIVE_UP_KEY 68
 #define PERSPECTIVE_DOWN_KEY 65
 #define TOGGLE_TRAILS_KEY 84
 #define TOGGLE_NAMES_KEY 78
+#define UPDATES_DOWN 45
+#define UPDATES_UP 61
 
 #define PREVIOUS_BUTTON 0
 #define NEXT_BUTTON 1
@@ -32,6 +34,7 @@
 double last_frame_rate_update = 0;
 double last_frame_time = 0;
 int frame_count = 0;
+int updates_per_frame = 1;
 
 void calculateFPS(GLFWwindow* window);
 void onWindowRescale(GLFWwindow* window, int width, int height);
@@ -101,8 +104,11 @@ int main(int argc, char* argv[]) {
   while (!glfwWindowShouldClose(window)) {
     glfwPollEvents();
 
-    simulator->update(SimulationMethod::Simple, glfwGetTime() - last_frame_time,
-                      show_names, show_trails);
+    for (int i = 0; i < updates_per_frame; i++) {
+      simulator->update(SimulationMethod::Simple,
+                        glfwGetTime() - last_frame_time, show_names,
+                        show_trails);
+    }
     last_frame_time = glfwGetTime();
 
     renderer->panning = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT);
@@ -113,8 +119,6 @@ int main(int argc, char* argv[]) {
     }
 
     bool show_perspective_buttons = simulator->perspective != -1;
-
-    std::cout << simulator->perspective << std::endl;
 
     buttons[PREVIOUS_BUTTON].visible = show_perspective_buttons;
     buttons[NEXT_BUTTON].visible = show_perspective_buttons;
@@ -215,6 +219,7 @@ void onKeyPress(GLFWwindow* window, int key, int scancode, int action,
       break;
     case THREE_BODY_SCENE_KEY:
       loadThreeBodyScene();
+      break;
     case PERSPECTIVE_UP_KEY:
       previousClicked();
       break;
@@ -226,6 +231,12 @@ void onKeyPress(GLFWwindow* window, int key, int scancode, int action,
       break;
     case TOGGLE_NAMES_KEY:
       show_names = !show_names;
+      break;
+    case UPDATES_DOWN:
+      updates_per_frame = std::max(updates_per_frame - 1, 1);
+      break;
+    case UPDATES_UP:
+      updates_per_frame++;
       break;
   }
 }
@@ -265,6 +276,7 @@ void loadMercuryScene() {
   simulator->addBody(100, 100, glm::vec2(0), glm::vec3(0.55), glm::vec2(0),
                      "Mercury");
 
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -275,6 +287,7 @@ void loadVenusScene() {
   simulator->addBody(100, 300, glm::vec2(0), glm::vec3(0.8, 0.75, 0.5),
                      glm::vec2(0), "Venus");
 
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -287,6 +300,7 @@ void loadEarthScene() {
   simulator->addBody(1, 100, glm::vec2(800, 0), glm::vec3(0.55),
                      glm::vec2(0, 100), "Moon");
 
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -301,6 +315,7 @@ void loadMarsScene() {
   simulator->addBody(5, 10, glm::vec2(800, 0), glm::vec3(0.7), glm::vec2(0, 88),
                      "Deimos");
 
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -313,6 +328,7 @@ void loadJupiterScene() {
   simulator->addBody(5, 40, glm::vec2(500, 0), glm::vec3(0.7), glm::vec2(0, 10),
                      "Io");
 
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -322,6 +338,7 @@ void loadSaturnScene() {
   simulator->clearBodies();
   simulator->addBody(600, 500, glm::vec2(0), glm::vec3(0.65, 0.6, 0.45));
 
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -330,6 +347,9 @@ void loadSaturnScene() {
 void loadUranusScene() {
   simulator->clearBodies();
 
+  simulator->addBody(600, 500, glm::vec2(0), glm::vec3(0.65, 0.6, 0.45));
+
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -338,6 +358,9 @@ void loadUranusScene() {
 void loadNeptuneScene() {
   simulator->clearBodies();
 
+  simulator->addBody(600, 500, glm::vec2(0), glm::vec3(0.65, 0.6, 0.45));
+
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -345,7 +368,32 @@ void loadNeptuneScene() {
 
 void loadSolarSystemScene() {
   simulator->clearBodies();
+  simulator->addBody(10000, 1000, glm::vec2(0), glm::vec3(0.8, 0.8, 0.2),
+                     glm::vec2(0), "Sun");
+  simulator->addBody(10, 20, glm::vec2(1000, 0), glm::vec3(0.55),
+                     glm::vec2(0, 316.23), "Mercury");
+  simulator->addBody(30, 50, glm::vec2(1750, 0), glm::vec3(0.8, 0.75, 0.5),
+                     glm::vec2(0, 239.05), "Venus");
+  simulator->addBody(20, 40, glm::vec2(2500, 0), glm::vec3(0.1, 0.3, 0.55),
+                     glm::vec2(0, 200), "Earth");
+  simulator->addBody(1, 15, glm::vec2(2600, 0), glm::vec3(0.55),
+                     glm::vec2(0, 244.72), "Moon");
+  simulator->addBody(20, 40, glm::vec2(3250, 0), glm::vec3(0.7, 0.45, 0.35),
+                     glm::vec2(0, 175.41), "Mars");
+  simulator->addBody(0.2, 4, glm::vec2(3325, 0), glm::vec3(0.7),
+                     glm::vec2(0, 215.41), "Phobos");
+  simulator->addBody(0.5, 2, glm::vec2(3375, 0), glm::vec3(0.7),
+                     glm::vec2(0, 215.41), "Deimos");
+  simulator->addBody(100, 200, glm::vec2(5000, 0), glm::vec3(0.65, 0.6, 0.45),
+                     glm::vec2(0, 141.42), "Jupiter");
+  simulator->addBody(60, 150, glm::vec2(7000, 0), glm::vec3(0.7, 0.65, 0.5),
+                     glm::vec2(0, 119.52), "Saturn");
+  simulator->addBody(50, 100, glm::vec2(9000, 0), glm::vec3(0.6, 0.75, 0.8),
+                     glm::vec2(0, 105.41), "Uranus");
+  simulator->addBody(50, 100, glm::vec2(12000, 0), glm::vec3(0.4, 0.5, 0.6),
+                     glm::vec2(0, 91.29), "Neptune");
 
+  updates_per_frame = 1;
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
@@ -359,7 +407,8 @@ void loadThreeBodyScene() {
   simulator->addBody(500, 200, glm::vec2(0, -500), glm::vec3(0.9),
                      glm::vec2(-50, 0));
 
-  simulator->perspective = -1;
+  updates_per_frame = 1;
+  simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
 }
