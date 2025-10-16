@@ -23,7 +23,6 @@ set(CMAKE_RC_TARGET_INCLUDE_PATH
   "external/freetype/include"
   "/home/gib/Downloads/N-Body/external/freetype/include"
   "external/freetype/include/freetype/config"
-  "/usr/include"
   )
 
 # The set of dependency files which are needed:

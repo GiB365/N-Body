@@ -15,16 +15,16 @@
 ########################
 
 //Path to a file.
-BROTLIDEC_INCLUDE_DIRS:PATH=/usr/include
+BROTLIDEC_INCLUDE_DIRS:PATH=BROTLIDEC_INCLUDE_DIRS-NOTFOUND
 
 //Path to a library.
-BROTLIDEC_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libbrotlidec.a
+BROTLIDEC_LIBRARIES:FILEPATH=BROTLIDEC_LIBRARIES-NOTFOUND
 
 //Build shared libraries
 BUILD_SHARED_LIBS:BOOL=OFF
 
 //Path to a file.
-BZIP2_INCLUDE_DIR:PATH=/usr/include
+BZIP2_INCLUDE_DIR:PATH=BZIP2_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
 BZIP2_LIBRARY_DEBUG:FILEPATH=BZIP2_LIBRARY_DEBUG-NOTFOUND
@@ -308,8 +308,8 @@ CMAKE_STRIP:FILEPATH=/usr/bin/x86_64-w64-mingw32-strip
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//No help, variable specified on the command line.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=mingw_toolchain.cmake
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/gib/Downloads/N-Body/mingw-toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -416,7 +416,7 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a file.
-ZLIB_INCLUDE_DIR:PATH=/usr/include
+ZLIB_INCLUDE_DIR:PATH=ZLIB_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
 ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
@@ -443,7 +443,7 @@ nbody_sim_IS_TOP_LEVEL:STATIC=ON
 nbody_sim_SOURCE_DIR:STATIC=/home/gib/Downloads/N-Body
 
 //Path to a library.
-pkgcfg_lib_PC_BROTLIDEC_brotlidec:FILEPATH=/usr/lib/x86_64-linux-gnu/libbrotlidec.a
+pkgcfg_lib_PC_BROTLIDEC_brotlidec:FILEPATH=pkgcfg_lib_PC_BROTLIDEC_brotlidec-NOTFOUND
 
 
 ########################
@@ -658,8 +658,6 @@ CPACK_SOURCE_7Z-ADVANCED:INTERNAL=1
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
-//Details about finding BrotliDec
-FIND_PACKAGE_MESSAGE_DETAILS_BrotliDec:INTERNAL=[/usr/include][/usr/lib/x86_64-linux-gnu/libbrotlidec.a][v1.1.0()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[opengl32][c ][v()]
 //Details about finding PkgConfig

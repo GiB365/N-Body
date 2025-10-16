@@ -184,9 +184,31 @@ CMakeFiles/nbody_sim.dir/src/Simulator.cpp.obj: \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/cerrno \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/charconv.h \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/basic_string.tcc \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/algorithm \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/pstl/glue_algorithm_defs.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/pstl/execution_defs.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/freetype.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/ft2build.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/ftheader.h \
+ /home/gib/Downloads/N-Body/winBuild/external/freetype/include/freetype/config/ftconfig.h \
+ /home/gib/Downloads/N-Body/winBuild/external/freetype/include/freetype/config/ftoption.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/ftstdlib.h \
+ /usr/share/mingw-w64/include/string.h \
+ /usr/share/mingw-w64/include/sec_api/string_s.h \
+ /usr/share/mingw-w64/include/setjmp.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/stdarg.h \
+ /usr/share/mingw-w64/include/stdarg.h \
+ /usr/share/mingw-w64/include/_mingw_stdarg.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/integer-types.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/public-macros.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/mac-support.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fttypes.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftsystem.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftimage.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fterrors.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/ftmoderr.h \
+ /home/gib/Downloads/N-Body/external/freetype/include/freetype/fterrdef.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/map \
+ /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_tree.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_map.h \
+ /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_multimap.h \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/cmath \
  /usr/share/mingw-w64/include/math.h \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/specfun.h \

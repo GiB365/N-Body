@@ -12,3 +12,8 @@ set(GLFW_USE_LIBDL OFF CACHE BOOL "Do not use libdl")
 set(GLFW_USE_PTHREADS OFF CACHE BOOL "Do not use pthreads")
 set(GLFW_USE_X11 OFF CACHE BOOL "Do not use X11")
 
+# Optionally set path to find headers and libs
+set(CMAKE_FIND_ROOT_PATH /usr/x86_64-w64-mingw32)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)

@@ -11,7 +11,7 @@ C_FLAGS =
 
 RC_DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
 
-RC_INCLUDES = -I /home/gib/Downloads/N-Body/winBuild/external/freetype/include -I /home/gib/Downloads/N-Body/external/freetype/include -I /home/gib/Downloads/N-Body/winBuild/external/freetype/include/freetype/config -I /usr/include
+RC_INCLUDES = -I /home/gib/Downloads/N-Body/winBuild/external/freetype/include -I /home/gib/Downloads/N-Body/external/freetype/include -I /home/gib/Downloads/N-Body/winBuild/external/freetype/include/freetype/config
 
 RC_FLAGS = 
 

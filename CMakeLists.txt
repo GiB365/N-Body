@@ -22,9 +22,9 @@ target_include_directories(nbody_sim PRIVATE external/glm)
 
 #For Linux
 find_package(OpenGL REQUIRED)
-target_link_libraries(nbody_sim PRIVATE glew glfw OpenGL::GL freetype)
+#target_link_libraries(nbody_sim PRIVATE glew glfw OpenGL::GL freetype)
 
 #For windows
-#target_link_libraries(nbody_sim PRIVATE glew glfw opengl32 freetype)
-#set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libgcc -static-libstdc++")
+target_link_libraries(nbody_sim PRIVATE glew glfw opengl32 freetype)
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static-libgcc -static-libstdc++")
 

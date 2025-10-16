@@ -164,7 +164,6 @@ nbody_sim.exe: CMakeFiles/nbody_sim.dir/build.make
 nbody_sim.exe: libglew.a
 nbody_sim.exe: external/glfw/src/libglfw3.a
 nbody_sim.exe: external/freetype/libfreetype.a
-nbody_sim.exe: /usr/lib/x86_64-linux-gnu/libbrotlidec.a
 nbody_sim.exe: CMakeFiles/nbody_sim.dir/linkLibs.rsp
 nbody_sim.exe: CMakeFiles/nbody_sim.dir/objects1.rsp
 nbody_sim.exe: CMakeFiles/nbody_sim.dir/link.txt
