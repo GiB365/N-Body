@@ -6,7 +6,6 @@
 
 class Button {
  private:
-  std::string text;
   glm::vec2 position, size;
   glm::vec3 background_color;
 
@@ -17,6 +16,9 @@ class Button {
   void calculateCorners();
 
  public:
+  bool visible = true;
+  std::string text;
+
   Button(const char* text, glm::vec2 position, glm::vec2 size,
          void (*clickedCallback)(), glm::vec3 background_color,
          glm::vec2 centered = glm::vec2(0));

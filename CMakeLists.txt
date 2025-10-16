@@ -21,7 +21,7 @@ add_executable(nbody_sim src/main.cpp src/Renderer.cpp src/Simulator.cpp src/Qua
 target_include_directories(nbody_sim PRIVATE external/glm)
 
 #For Linux
-find_package(OpenGL REQUIRED)
+#find_package(OpenGL REQUIRED)
 #target_link_libraries(nbody_sim PRIVATE glew glfw OpenGL::GL freetype)
 
 #For windows

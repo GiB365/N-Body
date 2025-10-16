@@ -104,7 +104,7 @@ void Renderer::initializeFreeType() {
               << std::endl;
   }
 
-  FT_Set_Pixel_Sizes(font_face, 0, 48);
+  FT_Set_Pixel_Sizes(font_face, 0, 128);
 
   glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
@@ -222,6 +222,10 @@ void Renderer::renderText(GLFWwindow* window, std::string text,
                           glm::vec2 position, float scale,
                           bool percentage_coords, glm::vec3 color,
                           bool centered) {
+  if (text.size() == 0) {
+    return;
+  }
+
   glUniform3f(glGetUniformLocation(text_shader_program, "textColor"), color.x,
               color.y, color.z);
   glActiveTexture(GL_TEXTURE0);
@@ -245,6 +249,8 @@ void Renderer::renderText(GLFWwindow* window, std::string text,
     position += glm::vec2((float)screen_width / 2, (float)screen_height / 2);
   }
 
+  scale /= 2.6;
+
   float tallest = 0.0;
   float total_width = 0.0;
   float first_bearing = Characters[text.at(0)].Bearing.x;
@@ -257,7 +263,7 @@ void Renderer::renderText(GLFWwindow* window, std::string text,
     char c = text.at(i);
 
     Character ch = Characters[c];
-    float height = ch.Size.y;
+    float height = ch.Bearing.y;
     tallest = std::max(height, tallest);
 
     float w = ch.Size.x;

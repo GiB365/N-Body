@@ -1,5 +1,4 @@
 #include "UIElements.hpp"
-#include <iostream>
 #include "glm/ext/vector_float2.hpp"
 
 Button::Button(const char* text, glm::vec2 position, glm::vec2 size,
@@ -22,15 +21,17 @@ Button::Button(const char* text, glm::vec2 position, glm::vec2 size,
 }
 
 void Button::checkButtonClicked(glm::vec2 mouse_screen_position) {
+  if (!visible) {
+    return;
+  }
+
   float x_distance = abs(100 * mouse_screen_position.x - position.x);
   float y_distance = abs(100 * mouse_screen_position.y - position.y);
-
-  std::cout << x_distance << " " << y_distance << std::endl;
 
   bool within_x = x_distance > 0 && x_distance < size.x;
   bool within_y = y_distance > 0 && y_distance < abs(size.y);
 
-  if (!within_x || !within_y) {
+  if (!within_x || !within_y || clickedCallback == nullptr) {
     return;
   }
 
@@ -38,10 +39,16 @@ void Button::checkButtonClicked(glm::vec2 mouse_screen_position) {
 }
 
 void Button::render(Renderer* renderer) {
-  renderer->addTriangle(button_corners[0], button_corners[1], button_corners[2],
-                        background_color);
-  renderer->addTriangle(button_corners[1], button_corners[2], button_corners[3],
-                        background_color);
+  if (!visible) {
+    return;
+  }
+
+  if (background_color != glm::vec3(0.0)) {
+    renderer->addTriangle(button_corners[0], button_corners[1],
+                          button_corners[2], background_color);
+    renderer->addTriangle(button_corners[1], button_corners[2],
+                          button_corners[3], background_color);
+  }
 
   glm::vec2 text_position = glm::vec2((2 * position.x + size.x) / 2.0,
                                       (2 * position.y + size.y) / 2.0);

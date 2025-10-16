@@ -42,7 +42,7 @@ void Body::renderName(Renderer* renderer) {
 Simulator::Simulator(Renderer* renderer, int body_count) {
   this->renderer = renderer;
   this->tree = new QuadTree(renderer);
-  perspective = -2;
+  perspective = -1;
 
   for (int i = 0; i < body_count; i++) {
     float body_mass = rand_range(10, 25);
@@ -195,20 +195,11 @@ void Simulator::addBody(float mass, int radius, glm::vec2 position,
 
 void Simulator::clearBodies() { bodies.clear(); }
 
+int Simulator::getBodyCount() { return bodies.size(); }
+
 void Simulator::changePerspective(Renderer* renderer, int new_perspective,
                                   bool change_positions) {
   perspective = new_perspective;
-
-  if (perspective == bodies.size()) {
-    perspective = 0;
-  } else if (perspective == -1) {
-    if (!change_positions) {
-      perspective = -1;
-      return;
-    }
-
-    perspective = bodies.size() - 1;
-  }
 
   if (bodies.empty()) return;
 
@@ -226,5 +217,7 @@ void Simulator::changePerspective(Renderer* renderer, int new_perspective,
     bodies[i].trail_points.clear();
   }
 }
+
+std::string Simulator::getPerspectiveName() { return bodies[perspective].name; }
 
 int rand_range(int min, int max) { return min + rand() % (max - min + 1); }

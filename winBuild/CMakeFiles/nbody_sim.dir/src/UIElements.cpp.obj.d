@@ -197,37 +197,4 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj: \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/map \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_tree.h \
  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_map.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_multimap.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/iostream \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ostream \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ios \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/exception \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/exception_ptr.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/cxxabi_init_exception.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/nested_exception.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/ios_base.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ext/atomicity.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- /usr/share/mingw-w64/include/sys/timeb.h \
- /usr/share/mingw-w64/include/sec_api/sys/timeb_s.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_classes.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_classes.tcc \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/system_error \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/stdexcept \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/streambuf \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/streambuf.tcc \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/basic_ios.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_facets.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/cwctype \
- /usr/share/mingw-w64/include/wctype.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/streambuf_iterator.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_facets.tcc \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/basic_ios.tcc \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/ostream.tcc \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/istream \
- /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/istream.tcc
+ /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_multimap.h

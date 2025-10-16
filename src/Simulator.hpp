@@ -47,6 +47,7 @@ class Simulator {
                glm::vec2 velocity = glm::vec2(0, 0), std::string name = "",
                int max_trail_length = 100);
   void clearBodies();
+  int getBodyCount();
 
   void update(SimulationMethod method, float delta, bool show_names = false,
               bool show_trails = false);
@@ -57,6 +58,7 @@ class Simulator {
 
   void changePerspective(Renderer* renderer, int new_perspective,
                          bool change_positions = true);
+  std::string getPerspectiveName();
 
   void render(bool show_names, bool show_trails);
 };

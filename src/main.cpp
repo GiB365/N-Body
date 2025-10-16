@@ -17,11 +17,17 @@
 #define SATURN_SCENE_KEY 54
 #define URANUS_SCENE_KEY 55
 #define NEPTUNE_SCENE_KEY 56
+#define SOLAR_SYSTEM_SCENE_KEY 57
+#define THREE_BODY_SCENE_KEY 58
 
-#define PERSPECTIVE_UP_KEY 65
-#define PERSPECTIVE_DOWN_KEY 68
+#define PERSPECTIVE_UP_KEY 68
+#define PERSPECTIVE_DOWN_KEY 65
 #define TOGGLE_TRAILS_KEY 84
 #define TOGGLE_NAMES_KEY 78
+
+#define PREVIOUS_BUTTON 0
+#define NEXT_BUTTON 1
+#define PLANET_TITLE 2
 
 double last_frame_rate_update = 0;
 double last_frame_time = 0;
@@ -42,6 +48,8 @@ void loadJupiterScene();
 void loadSaturnScene();
 void loadUranusScene();
 void loadNeptuneScene();
+void loadSolarSystemScene();
+void loadThreeBodyScene();
 
 void instantiateButtons();
 
@@ -97,10 +105,22 @@ int main(int argc, char* argv[]) {
                       show_names, show_trails);
     last_frame_time = glfwGetTime();
 
-    renderer->panning = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_MIDDLE);
+    renderer->panning = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_RIGHT);
 
-    if (renderer->panning && simulator->perspective != 0) {
-      simulator->changePerspective(renderer, -1, false);
+    if (renderer->panning && simulator->perspective != -1) {
+      simulator->changePerspective(renderer, -1, simulator->perspective != 0);
+      buttons[PLANET_TITLE].text = "";
+    }
+
+    bool show_perspective_buttons = simulator->perspective != -1;
+
+    std::cout << simulator->perspective << std::endl;
+
+    buttons[PREVIOUS_BUTTON].visible = show_perspective_buttons;
+    buttons[NEXT_BUTTON].visible = show_perspective_buttons;
+
+    if (show_perspective_buttons) {
+      buttons[PLANET_TITLE].text = simulator->getPerspectiveName();
     }
 
     for (int i = 0; i < buttons.size(); i++) {
@@ -190,11 +210,16 @@ void onKeyPress(GLFWwindow* window, int key, int scancode, int action,
     case NEPTUNE_SCENE_KEY:
       loadNeptuneScene();
       break;
+    case SOLAR_SYSTEM_SCENE_KEY:
+      loadSolarSystemScene();
+      break;
+    case THREE_BODY_SCENE_KEY:
+      loadThreeBodyScene();
     case PERSPECTIVE_UP_KEY:
-      simulator->changePerspective(renderer, simulator->perspective + 1);
+      previousClicked();
       break;
     case PERSPECTIVE_DOWN_KEY:
-      simulator->changePerspective(renderer, simulator->perspective - 1);
+      nextClicked();
       break;
     case TOGGLE_TRAILS_KEY:
       show_trails = !show_trails;
@@ -211,14 +236,28 @@ void instantiateButtons() {
                               glm::vec2(1, 0)));
   buttons.emplace_back(Button("Next", glm::vec2(90, 0), glm::vec2(20, 5),
                               nextClicked, glm::vec3(0.4), glm::vec2(1, 0)));
+  buttons.emplace_back(Button("", glm::vec2(50, 8), glm::vec2(20, 10), nullptr,
+                              glm::vec3(0.0), glm::vec2(1)));
 }
 
 void previousClicked() {
-  simulator->changePerspective(renderer, simulator->perspective + 1);
+  int previous_perspective = simulator->perspective + 1;
+
+  if (previous_perspective >= simulator->getBodyCount()) {
+    previous_perspective = 0;
+  }
+
+  simulator->changePerspective(renderer, previous_perspective);
 }
 
 void nextClicked() {
-  simulator->changePerspective(renderer, simulator->perspective - 1);
+  int next_perspective = simulator->perspective - 1;
+
+  if (next_perspective <= -1) {
+    next_perspective = simulator->getBodyCount() - 1;
+  }
+
+  simulator->changePerspective(renderer, next_perspective);
 }
 
 void loadMercuryScene() {
@@ -257,9 +296,9 @@ void loadMarsScene() {
   simulator->clearBodies();
   simulator->addBody(600, 400, glm::vec2(0, 0), glm::vec3(0.7, 0.45, 0.35),
                      glm::vec2(0), "Mars");
-  simulator->addBody(2, 40, glm::vec2(500, 0), glm::vec3(0.7),
+  simulator->addBody(10, 40, glm::vec2(500, 0), glm::vec3(0.7),
                      glm::vec2(0, 110), "Phobos");
-  simulator->addBody(1, 10, glm::vec2(800, 0), glm::vec3(0.7), glm::vec2(0, 88),
+  simulator->addBody(5, 10, glm::vec2(800, 0), glm::vec3(0.7), glm::vec2(0, 88),
                      "Deimos");
 
   simulator->perspective = 0;
@@ -269,9 +308,10 @@ void loadMarsScene() {
 
 void loadJupiterScene() {
   simulator->clearBodies();
-  simulator->addBody(600, 500, glm::vec2(0), glm::vec3(0.65, 0.6, 0.45));
-
-  // TODO: Add moons
+  simulator->addBody(600, 1000, glm::vec2(0), glm::vec3(0.65, 0.6, 0.45),
+                     glm::vec2(0), "Jupiter");
+  simulator->addBody(5, 40, glm::vec2(500, 0), glm::vec3(0.7), glm::vec2(0, 10),
+                     "Io");
 
   simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
@@ -280,13 +320,9 @@ void loadJupiterScene() {
 
 void loadSaturnScene() {
   simulator->clearBodies();
-  simulator->addBody(500, 200, glm::vec2(0), glm::vec3(0.6), glm::vec2(0, 0));
-  simulator->addBody(500, 200, glm::vec2(0, 500), glm::vec3(0.9),
-                     glm::vec2(150, 0));
-  simulator->addBody(500, 200, glm::vec2(0, -500), glm::vec3(0.9),
-                     glm::vec2(-50, 0));
+  simulator->addBody(600, 500, glm::vec2(0), glm::vec3(0.65, 0.6, 0.45));
 
-  simulator->perspective = -1;
+  simulator->perspective = 0;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
 }
@@ -303,6 +339,27 @@ void loadNeptuneScene() {
   simulator->clearBodies();
 
   simulator->perspective = 0;
+  renderer->camera_position = glm::vec2(0);
+  renderer->zoom = 1200;
+}
+
+void loadSolarSystemScene() {
+  simulator->clearBodies();
+
+  simulator->perspective = 0;
+  renderer->camera_position = glm::vec2(0);
+  renderer->zoom = 1200;
+}
+
+void loadThreeBodyScene() {
+  simulator->clearBodies();
+  simulator->addBody(500, 200, glm::vec2(0), glm::vec3(0.6), glm::vec2(0, 0));
+  simulator->addBody(500, 200, glm::vec2(0, 500), glm::vec3(0.9),
+                     glm::vec2(150, 0));
+  simulator->addBody(500, 200, glm::vec2(0, -500), glm::vec3(0.9),
+                     glm::vec2(-50, 0));
+
+  simulator->perspective = -1;
   renderer->camera_position = glm::vec2(0);
   renderer->zoom = 1200;
 }
