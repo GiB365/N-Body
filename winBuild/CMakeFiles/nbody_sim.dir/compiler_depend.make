@@ -804,8 +804,6 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj: /home/gib/Downloads/N-Body/src/
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/algorithmfwd.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/alloc_traits.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/allocator.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/basic_ios.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/basic_ios.tcc \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/basic_string.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/basic_string.tcc \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/char_traits.h \
@@ -813,32 +811,22 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj: /home/gib/Downloads/N-Body/src/
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/concept_check.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/cpp_type_traits.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/cxxabi_forced.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/cxxabi_init_exception.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/enable_special_members.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/erase_if.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/exception.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/exception_defines.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/exception_ptr.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/functexcept.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/functional_hash.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/hash_bytes.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/hashtable.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/hashtable_policy.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/invoke.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/ios_base.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/istream.tcc \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_classes.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_classes.tcc \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_facets.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/locale_facets.tcc \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/localefwd.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/memory_resource.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/memoryfwd.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/move.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/nested_exception.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/new_allocator.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/node_handle.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/ostream.tcc \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/ostream_insert.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/postypes.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/predefined_ops.h \
@@ -864,8 +852,6 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj: /home/gib/Downloads/N-Body/src/
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_tree.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_uninitialized.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stl_vector.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/streambuf.tcc \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/streambuf_iterator.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/string_view.tcc \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/stringfwd.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/bits/uniform_int_dist.h \
@@ -884,48 +870,32 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj: /home/gib/Downloads/N-Body/src/
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/cstdio \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/cstdlib \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/cwchar \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/cwctype \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/debug/assertions.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/debug/debug.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/exception \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ext/aligned_buffer.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ext/alloc_traits.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ext/atomicity.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ext/numeric_traits.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ext/string_conversions.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ext/type_traits.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/functional \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/initializer_list \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ios \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/iosfwd \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/iostream \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/istream \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/limits \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/map \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/new \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/ostream \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/pstl/pstl_config.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/stdexcept \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/stdlib.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/streambuf \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/string \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/string_view \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/system_error \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/tuple \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/type_traits \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/typeinfo \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/unordered_map \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/vector \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
-  /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/gthr.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/limits.h \
   /usr/lib/gcc/x86_64-w64-mingw32/13-win32/include/mm_malloc.h \
@@ -956,7 +926,6 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj: /home/gib/Downloads/N-Body/src/
   /usr/share/mingw-w64/include/sec_api/stdio_s.h \
   /usr/share/mingw-w64/include/sec_api/stdlib_s.h \
   /usr/share/mingw-w64/include/sec_api/string_s.h \
-  /usr/share/mingw-w64/include/sec_api/sys/timeb_s.h \
   /usr/share/mingw-w64/include/sec_api/wchar_s.h \
   /usr/share/mingw-w64/include/setjmp.h \
   /usr/share/mingw-w64/include/stdarg.h \
@@ -966,10 +935,8 @@ CMakeFiles/nbody_sim.dir/src/UIElements.cpp.obj: /home/gib/Downloads/N-Body/src/
   /usr/share/mingw-w64/include/stdlib.h \
   /usr/share/mingw-w64/include/string.h \
   /usr/share/mingw-w64/include/swprintf.inl \
-  /usr/share/mingw-w64/include/sys/timeb.h \
   /usr/share/mingw-w64/include/vadefs.h \
-  /usr/share/mingw-w64/include/wchar.h \
-  /usr/share/mingw-w64/include/wctype.h
+  /usr/share/mingw-w64/include/wchar.h
 
 CMakeFiles/nbody_sim.dir/src/main.cpp.obj: /home/gib/Downloads/N-Body/src/main.cpp \
   /home/gib/Downloads/N-Body/external/freetype/include/freetype/config/ftheader.h \
